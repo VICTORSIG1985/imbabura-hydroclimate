@@ -11,9 +11,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const t = await getTranslations('about');
   const isEs = locale === 'es';
 
-  // Cita APA 7ª edición — sin la palabra "bilingüe"
-  const apa7_es = `Pinto-Páez, V. H. (2026). Geoportal Hidroclimático de Imbabura: Tendencias 1981–2025, ENSO y proyecciones CMIP6 [Geoportal científico]. ${SITE.publicUrl}`;
-  const apa7_en = `Pinto-Páez, V. H. (2026). Imbabura Hydroclimatic Geoportal: Trends 1981–2025, ENSO and CMIP6 projections [Scientific geoportal]. ${SITE.publicUrl}`;
+  // APA 7ª edición · Section 10.10 (Data Sets):
+  // Author, A. A. (Year). *Title of data set* (Version) [Data set]. URL
+  const apa7_es_year = '2026';
+  const apa7_es_title = 'Geoportal Hidroclimático de Imbabura: Tendencias hidroclimáticas 1981–2025, El Niño–Oscilación del Sur y proyecciones CMIP6';
+  const apa7_en_title = 'Imbabura Hydroclimatic Geoportal: Hydroclimatic trends 1981–2025, El Niño–Southern Oscillation and CMIP6 projections';
 
   return (
     <>
@@ -50,10 +52,17 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <div className="card">
               <h2 className="heading-3 text-andean-deep mb-3">{t('cite_title')}</h2>
               <p className="text-xs text-slate-500 mb-2 uppercase tracking-wide font-semibold">
-                {isEs ? 'Formato APA 7ª edición' : 'APA 7th edition format'}
+                {isEs ? 'Formato APA 7ª edición · Conjunto de datos en línea' : 'APA 7th edition format · Online data set'}
               </p>
-              <p className="text-sm font-mono bg-slate-50 border border-slate-200 rounded p-4 leading-relaxed text-slate-800">
-                {isEs ? apa7_es : apa7_en}
+              <p className="text-sm bg-slate-50 border border-slate-200 rounded p-4 leading-relaxed text-slate-800" style={{ textIndent: '-2rem', paddingLeft: '2.25rem' }}>
+                Pinto-Páez, V. H. ({apa7_es_year}). <em className="italic">{isEs ? apa7_es_title : apa7_en_title}</em>{' '}
+                ({isEs ? 'Versión 1.0' : 'Version 1.0'}) [{isEs ? 'Conjunto de datos científicos' : 'Data set'}].{' '}
+                <a href={SITE.publicUrl} className="link-cta">{SITE.publicUrl}</a>
+              </p>
+              <p className="text-[10px] text-slate-500 mt-3 italic leading-snug">
+                {isEs
+                  ? 'Formato según APA 7.0 · Manual de Publicaciones de la American Psychological Association · Section 10.10 (Data Sets, Software, and Tests). El título se presenta en cursiva, el descriptor entre corchetes, y la URL al final.'
+                  : 'Format per APA 7.0 · American Psychological Association Publication Manual · Section 10.10 (Data Sets, Software, and Tests). Title in italics, descriptor in brackets, URL at the end.'}
               </p>
             </div>
 

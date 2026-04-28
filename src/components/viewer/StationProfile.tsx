@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { useTranslations, useLocale } from 'next-intl';
 import { dataUrl } from '@/lib/assets';
-import { X, TrendingUp, Mountain, Calendar } from 'lucide-react';
+import { X, TrendingUp, Mountain, Calendar, AlertCircle } from 'lucide-react';
 
 const Plot = dynamic(() => import('react-plotly.js'), { ssr: false });
 
@@ -159,9 +159,17 @@ export default function StationProfile({ stationId, onClose, allStations }: Prop
           <Stat
             icon={<Calendar className="w-4 h-4" />}
             label={locale === 'es' ? 'Cambio observado 1981→2025' : 'Observed change 1981→2025'}
-            value={`${obsChange >= 0 ? '+' : ''}${obsChange.toFixed(isTemp ? 2 : 0)} ${unit}`}
-            sub={`${histStart?.toFixed(isTemp ? 1 : 0)} → ${histEnd?.toFixed(isTemp ? 1 : 0)}`}
-            tone={obsChange > 0 && isTemp ? 'red' : obsChange > 0 ? 'blue' : 'slate'}
+            value={
+              isTemp && !station.trends.Tmean_significant
+                ? (locale === 'es' ? 'Sin tendencia detectable' : 'No detectable trend')
+                : `${obsChange >= 0 ? '+' : ''}${obsChange.toFixed(isTemp ? 2 : 0)} ${unit}`
+            }
+            sub={`${histStart?.toFixed(isTemp ? 1 : 0)} → ${histEnd?.toFixed(isTemp ? 1 : 0)} ${unit}`}
+            tone={
+              isTemp && !station.trends.Tmean_significant ? 'slate' :
+              obsChange > 0 && isTemp ? 'red' :
+              obsChange > 0 ? 'blue' : 'slate'
+            }
           />
           <Stat
             icon={<TrendingUp className="w-4 h-4" />}
@@ -178,6 +186,19 @@ export default function StationProfile({ stationId, onClose, allStations }: Prop
             tone="red"
           />
         </div>
+
+        {/* NOTA EXPLICATIVA — solo para temperatura */}
+        {isTemp && (
+          <div className="flex gap-2 p-3 bg-amber-50 border border-amber-200 rounded-lg mb-3">
+            <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+            <p className="text-xs text-amber-900 leading-relaxed">
+              <strong>{locale === 'es' ? 'Importante: ' : 'Important: '}</strong>
+              {locale === 'es'
+                ? 'Las temperaturas mostradas provienen de la celda del reanálisis ERA5-Land (~9 × 9 km) que contiene esta estación, no son temperaturas medidas directamente en el sitio. Sobre el valle interandino, este producto presenta diferencias respecto a los registros in-situ (puede mostrar valores menores en algunos píxeles). Lo que SÍ es confiable son las TENDENCIAS temporales, porque el desfase sistemático se cancela al calcular cambios año a año. Por eso este geoportal usa estos datos para detectar el calentamiento, no para reportar la temperatura puntual del sitio.'
+                : 'Temperatures shown come from the ERA5-Land reanalysis grid cell (~9 × 9 km) containing this station; they are not directly measured in-situ. Over the inter-Andean valley this product shows differences with respect to in-situ records (some pixels may show lower values). What IS reliable are the temporal TRENDS, because the systematic offset cancels when computing year-to-year changes. That is why this geoportal uses this data to detect warming, not to report the site\'s exact local temperature.'}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Plot */}

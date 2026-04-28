@@ -63,12 +63,12 @@ function HomeContent({ locale }: { locale: Locale }) {
           {isEs ? '21 estaciones INAMHI · 1981–2070 · auditoría científica con score 90/100' : '21 INAMHI stations · 1981–2070 · scientific audit score 90/100'}
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          <KPIBox label={t('kpi_period')}    value={t('kpi_period_value')}   sub={t('kpi_period_sub')} />
-          <KPIBox label={t('kpi_warming')}   value={t('kpi_warming_value')}  sub={t('kpi_warming_sub')} accent="red" />
-          <KPIBox label={t('kpi_enso')}      value={t('kpi_enso_value')}     sub={t('kpi_enso_sub')} accent="blue" />
-          <KPIBox label={t('kpi_cmip6')}     value={t('kpi_cmip6_value')}    sub={t('kpi_cmip6_sub')} accent="amber" />
-          <KPIBox label={t('kpi_lapse')}     value={t('kpi_lapse_value')}    sub={t('kpi_lapse_sub')} accent="green" />
-          <KPIBox label={t('kpi_extremes')}  value={t('kpi_extremes_value')} sub={t('kpi_extremes_sub')} accent="blue" />
+          <KPIBox label={t('kpi_period')}    value={t('kpi_period_value')}   sub={t('kpi_period_sub')}    explainKey="period" />
+          <KPIBox label={t('kpi_warming')}   value={t('kpi_warming_value')}  sub={t('kpi_warming_sub')}   accent="red"   explainKey="warming" />
+          <KPIBox label={t('kpi_enso')}      value={t('kpi_enso_value')}     sub={t('kpi_enso_sub')}      accent="blue"  explainKey="enso" />
+          <KPIBox label={t('kpi_cmip6')}     value={t('kpi_cmip6_value')}    sub={t('kpi_cmip6_sub')}     accent="amber" explainKey="cmip6" />
+          <KPIBox label={t('kpi_lapse')}     value={t('kpi_lapse_value')}    sub={t('kpi_lapse_sub')}     accent="green" explainKey="lapse" />
+          <KPIBox label={t('kpi_extremes')}  value={t('kpi_extremes_value')} sub={t('kpi_extremes_sub')}  accent="blue"  explainKey="extremes" />
         </div>
       </section>
 
