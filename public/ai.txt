@@ -1,0 +1,19 @@
+# =============================================================================
+# AI Usage Policy — Geoportal Hidroclimático de Imbabura
+# Conforming to https://site.spawning.ai/spawning-ai-txt
+# Última actualización: 2026-04-28
+# =============================================================================
+
+User-Agent: *
+
+# Política aplicable a TODO el contenido del sitio
+Disallow: /
+
+# Razones (CC BY-NC-SA 4.0):
+# - El contenido es producto de investigación científica
+# - No se autoriza uso comercial (cláusula NC)
+# - No se autoriza para entrenamiento de modelos de IA generativa
+# - Datos primarios son del INAMHI Ecuador (uso restringido)
+
+# Para uso académico humano: licencia CC BY-NC-SA 4.0 con atribución
+# Contacto del autor: vpintopaez@gmail.com

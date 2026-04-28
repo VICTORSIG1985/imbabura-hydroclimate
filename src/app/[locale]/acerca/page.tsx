@@ -92,7 +92,34 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 <span className="pill">© INAMHI · {isEs ? 'Datos primarios' : 'Primary data'}</span>
                 <span className="pill">{isEs ? 'Uso no comercial' : 'Non-commercial use'}</span>
                 <span className="pill">{isEs ? 'Atribución obligatoria' : 'Attribution required'}</span>
+                <span className="pill bg-red-50 border-red-300 text-red-800">{isEs ? '🚫 Prohibido entrenamiento de IA' : '🚫 AI training prohibited'}</span>
               </div>
+            </div>
+
+            {/* Aviso anti-IA / anti-scraping explícito */}
+            <div className="card border-l-4 border-l-red-500 bg-red-50/40">
+              <h2 className="heading-3 text-red-900 mb-3 flex items-center gap-2">
+                <ShieldCheck className="w-6 h-6 text-red-600" />
+                {isEs ? 'Política de uso por sistemas de IA' : 'AI Usage Policy'}
+              </h2>
+              <p className="body-lg mb-3">
+                {isEs
+                  ? 'Conforme a la licencia CC BY-NC-SA 4.0 y a la titularidad de los datos primarios por parte del INAMHI, el contenido de este geoportal NO ESTÁ AUTORIZADO para los siguientes usos:'
+                  : 'Pursuant to the CC BY-NC-SA 4.0 licence and INAMHI\'s ownership of primary data, the content of this geoportal is NOT AUTHORISED for the following uses:'}
+              </p>
+              <ul className="text-sm text-slate-700 space-y-1 list-disc list-inside mb-3">
+                <li>{isEs ? 'Entrenamiento de modelos de inteligencia artificial generativa.' : 'Training of generative artificial intelligence models.'}</li>
+                <li>{isEs ? 'Inferencia, recuperación aumentada (RAG) o generación de embeddings vectoriales.' : 'Inference, retrieval-augmented generation (RAG) or vector embedding.'}</li>
+                <li>{isEs ? 'Scraping automatizado o extracción masiva de contenido por crawlers no autorizados.' : 'Automated scraping or mass content extraction by unauthorised crawlers.'}</li>
+                <li>{isEs ? 'Reproducción comercial, reventa o distribución bajo otra licencia.' : 'Commercial reproduction, resale or redistribution under another licence.'}</li>
+                <li>{isEs ? 'Modificación de la estructura o falsificación del contenido derivado.' : 'Modification of the structure or falsification of derived content.'}</li>
+                <li>{isEs ? 'Resumen, traducción o transformación automatizada por sistemas de IA sin autorización expresa.' : 'Automated summarisation, translation or transformation by AI systems without express authorisation.'}</li>
+              </ul>
+              <p className="text-xs text-slate-600 italic">
+                {isEs
+                  ? 'Las políticas técnicas de exclusión están declaradas en /robots.txt, /ai.txt y /.well-known/ai-policy.txt. La consulta humana directa con fines académicos y científicos está autorizada bajo CC BY-NC-SA 4.0 con atribución completa.'
+                  : 'Technical exclusion policies are declared at /robots.txt, /ai.txt and /.well-known/ai-policy.txt. Direct human consultation for academic and scientific purposes is authorised under CC BY-NC-SA 4.0 with full attribution.'}
+              </p>
             </div>
 
             {/* Agradecimientos */}
