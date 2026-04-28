@@ -89,7 +89,8 @@ export default async function LocaleLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap"
         />
-        {/* === Hardening anti-IA / anti-scraping === */}
+        {/* === Señales declarativas: políticas de uso por bots y sistemas de IA === */}
+        {/* Estas son SEÑALES que crawlers honestos respetan. NO son barreras técnicas. */}
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:standard, noai, noimageai" />
         <meta name="googlebot" content="index, follow" />
         <meta name="GPTBot" content="noindex, nofollow" />
@@ -99,21 +100,14 @@ export default async function LocaleLayout({
         <meta name="anthropic-ai" content="noindex, nofollow" />
         <meta name="CCBot" content="noindex, nofollow" />
         <meta name="PerplexityBot" content="noindex, nofollow" />
-        {/* Estándares emergentes Spawning AI / IETF */}
         <meta name="ai-content-declaration" content="human-authored" />
         <meta name="ai-training" content="prohibited" />
         <meta name="content-mining" content="prohibited" />
-        {/* Seguridad de contenido (nivel meta — el equivalente a header CSP que GitHub Pages no permite) */}
-        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        <meta httpEquiv="Permissions-Policy" content="geolocation=(self), camera=(), microphone=(), payment=(), usb=()" />
-        <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        {/* Anti-clickjacking (GitHub Pages añade automáticamente X-Frame-Options:DENY) */}
-        <meta name="X-Frame-Options" content="DENY" />
-        {/* Aviso legal en metadata */}
+        {/* Aviso legal de copyright (texto consultivo) */}
         <meta name="copyright" content="© 2026 Víctor Hugo Pinto-Páez · CC BY-NC-SA 4.0 · Datos primarios © INAMHI Ecuador" />
         <meta name="usage-rights" content="non-commercial-academic-only" />
-        <meta name="ai-usage" content="prohibited" />
+        {/* Referrer policy (sí funciona como meta) */}
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
       </head>
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>

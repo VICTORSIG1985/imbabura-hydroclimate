@@ -96,29 +96,52 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </div>
             </div>
 
-            {/* Aviso anti-IA / anti-scraping explícito */}
-            <div className="card border-l-4 border-l-red-500 bg-red-50/40">
-              <h2 className="heading-3 text-red-900 mb-3 flex items-center gap-2">
-                <ShieldCheck className="w-6 h-6 text-red-600" />
-                {isEs ? 'Política de uso por sistemas de IA' : 'AI Usage Policy'}
+            {/* Política de uso (lenguaje preciso: declarativo, no "blindaje") */}
+            <div className="card border-l-4 border-l-amber-500 bg-amber-50/40">
+              <h2 className="heading-3 text-andean-deep mb-3 flex items-center gap-2">
+                <ShieldCheck className="w-6 h-6 text-amber-600" />
+                {isEs ? 'Política declarativa de uso por bots y sistemas de IA' : 'Declarative usage policy for bots and AI systems'}
               </h2>
               <p className="body-lg mb-3">
                 {isEs
-                  ? 'Conforme a la licencia CC BY-NC-SA 4.0 y a la titularidad de los datos primarios por parte del INAMHI, el contenido de este geoportal NO ESTÁ AUTORIZADO para los siguientes usos:'
-                  : 'Pursuant to the CC BY-NC-SA 4.0 licence and INAMHI\'s ownership of primary data, the content of this geoportal is NOT AUTHORISED for the following uses:'}
+                  ? 'Bajo la licencia CC BY-NC-SA 4.0 y considerando la titularidad de los datos primarios por parte del INAMHI, los siguientes usos NO están autorizados:'
+                  : 'Under the CC BY-NC-SA 4.0 licence, and considering INAMHI\'s ownership of primary data, the following uses are NOT authorised:'}
               </p>
-              <ul className="text-sm text-slate-700 space-y-1 list-disc list-inside mb-3">
+              <ul className="text-sm text-slate-700 space-y-1 list-disc list-inside mb-4">
                 <li>{isEs ? 'Entrenamiento de modelos de inteligencia artificial generativa.' : 'Training of generative artificial intelligence models.'}</li>
                 <li>{isEs ? 'Inferencia, recuperación aumentada (RAG) o generación de embeddings vectoriales.' : 'Inference, retrieval-augmented generation (RAG) or vector embedding.'}</li>
                 <li>{isEs ? 'Scraping automatizado o extracción masiva de contenido por crawlers no autorizados.' : 'Automated scraping or mass content extraction by unauthorised crawlers.'}</li>
                 <li>{isEs ? 'Reproducción comercial, reventa o distribución bajo otra licencia.' : 'Commercial reproduction, resale or redistribution under another licence.'}</li>
-                <li>{isEs ? 'Modificación de la estructura o falsificación del contenido derivado.' : 'Modification of the structure or falsification of derived content.'}</li>
                 <li>{isEs ? 'Resumen, traducción o transformación automatizada por sistemas de IA sin autorización expresa.' : 'Automated summarisation, translation or transformation by AI systems without express authorisation.'}</li>
               </ul>
-              <p className="text-xs text-slate-600 italic">
+
+              {/* Aclaración honesta sobre el alcance técnico */}
+              <div className="bg-white border border-amber-300 rounded-lg p-4">
+                <p className="font-bold text-andean-deep text-sm mb-2">
+                  {isEs ? '⚠️ Alcance técnico de estas medidas (transparencia)' : '⚠️ Technical scope of these measures (transparency)'}
+                </p>
+                <p className="text-sm text-slate-700 leading-relaxed mb-2">
+                  {isEs
+                    ? 'Las medidas técnicas declaradas en este sitio (robots.txt, ai.txt, /.well-known/ai-policy.txt y meta tags) son '
+                    : 'The technical measures declared on this site (robots.txt, ai.txt, /.well-known/ai-policy.txt and meta tags) are '}
+                  <strong>{isEs ? 'señales declarativas' : 'declarative signals'}</strong>
+                  {isEs
+                    ? ' que los crawlers respetuosos del estándar pueden honrar. No son una barrera técnica absoluta. Como este sitio se publica en GitHub Pages y el repositorio fuente es público, cualquier persona o sistema puede acceder al contenido. Cumplen una función de '
+                    : ' that standards-respecting crawlers may honour. They are not an absolute technical barrier. Since this site is hosted on GitHub Pages and the source repository is public, any person or system can access the content. They serve a function of '}
+                  <strong>{isEs ? 'aviso legal y documentación de la voluntad del autor' : 'legal notice and documentation of the author\'s intent'}</strong>
+                  {isEs ? ', no de bloqueo técnico.' : ', not technical blocking.'}
+                </p>
+                <p className="text-sm text-slate-700 leading-relaxed">
+                  {isEs
+                    ? 'La licencia CC BY-NC-SA 4.0 otorga al autor recurso legal frente a usos no autorizados, pero la prevención técnica del scraping requeriría infraestructura adicional (WAF, control de acceso, repositorio privado) que excede el alcance de este geoportal de consulta abierta.'
+                    : 'The CC BY-NC-SA 4.0 licence gives the author legal recourse against unauthorised uses, but technical prevention of scraping would require additional infrastructure (WAF, access control, private repository) beyond the scope of this open-consultation geoportal.'}
+                </p>
+              </div>
+
+              <p className="text-xs text-slate-600 italic mt-3">
                 {isEs
-                  ? 'Las políticas técnicas de exclusión están declaradas en /robots.txt, /ai.txt y /.well-known/ai-policy.txt. La consulta humana directa con fines académicos y científicos está autorizada bajo CC BY-NC-SA 4.0 con atribución completa.'
-                  : 'Technical exclusion policies are declared at /robots.txt, /ai.txt and /.well-known/ai-policy.txt. Direct human consultation for academic and scientific purposes is authorised under CC BY-NC-SA 4.0 with full attribution.'}
+                  ? 'La consulta humana directa con fines académicos y científicos está autorizada bajo CC BY-NC-SA 4.0 con atribución completa.'
+                  : 'Direct human consultation for academic and scientific purposes is authorised under CC BY-NC-SA 4.0 with full attribution.'}
               </p>
             </div>
 
