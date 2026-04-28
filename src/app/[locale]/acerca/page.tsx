@@ -1,7 +1,7 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import PageHero from '@/components/PageHero';
 import { SITE } from '@/data/config';
-import { Mail, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Mail, ExternalLink, ShieldCheck, Database } from 'lucide-react';
 import { asset } from '@/lib/assets';
 import type { Locale } from '@/i18n/config';
 
@@ -92,30 +92,106 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 <span className="pill">© INAMHI · {isEs ? 'Datos primarios' : 'Primary data'}</span>
                 <span className="pill">{isEs ? 'Uso no comercial' : 'Non-commercial use'}</span>
                 <span className="pill">{isEs ? 'Atribución obligatoria' : 'Attribution required'}</span>
-                <span className="pill bg-red-50 border-red-300 text-red-800">{isEs ? '🚫 Prohibido entrenamiento de IA' : '🚫 AI training prohibited'}</span>
               </div>
             </div>
 
-            {/* Política de uso simple */}
-            <div className="card border-l-4 border-l-andean-water">
+            {/* Citas de fuentes primarias y datasets utilizados */}
+            <div className="card">
               <h2 className="heading-3 text-andean-deep mb-3 flex items-center gap-2">
-                <ShieldCheck className="w-6 h-6 text-andean-water" />
-                {isEs ? 'Términos de reutilización del contenido' : 'Content reuse terms'}
+                <Database className="w-6 h-6 text-andean-water" />
+                {isEs ? 'Fuentes de datos y atribución' : 'Data sources and attribution'}
               </h2>
-              <p className="body-lg mb-3">
+              <p className="body-lg mb-4">
                 {isEs
-                  ? 'Bajo la licencia CC BY-NC-SA 4.0 y considerando la titularidad de los datos primarios por parte del INAMHI, no están autorizados los siguientes usos del contenido publicado:'
-                  : 'Under the CC BY-NC-SA 4.0 licence, and considering INAMHI\'s ownership of primary data, the following uses of the published content are not authorised:'}
+                  ? 'Este geoportal integra registros del INAMHI con seis productos satelitales y de modelación climática internacionales. Cada uno conserva su autoría original, su licencia y debe citarse de acuerdo con su política institucional. Las referencias en formato APA 7ª edición son:'
+                  : 'This geoportal integrates INAMHI records with six international satellite and climate-modelling products. Each retains its original authorship, licence and should be cited according to its institutional policy. References in APA 7th edition format are:'}
               </p>
-              <ul className="text-sm text-slate-700 space-y-1 list-disc list-inside mb-3">
-                <li>{isEs ? 'Reproducción comercial, reventa o distribución bajo otra licencia.' : 'Commercial reproduction, resale or redistribution under another licence.'}</li>
-                <li>{isEs ? 'Modificación o falsificación del contenido derivado del estudio.' : 'Modification or falsification of content derived from the study.'}</li>
-                <li>{isEs ? 'Reutilización sin atribución al autor y a la fuente original (INAMHI y productos satelitales citados).' : 'Reuse without attribution to the author and the original source (INAMHI and the cited satellite products).'}</li>
+              <ul className="space-y-3 text-sm">
+                {/* INAMHI */}
+                <li className="border-l-2 border-andean-deep pl-3">
+                  <p className="font-semibold text-andean-deep">{isEs ? 'INAMHI · Datos in-situ (fuente primaria)' : 'INAMHI · In-situ data (primary source)'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Instituto Nacional de Meteorología e Hidrología del Ecuador. (1994–2013). <em>Anuarios Meteorológicos Nos. 34–53</em> [Conjunto de datos meteorológicos]. INAMHI. <a href="https://servicios.inamhi.gob.ec/anuarios-metereologicos/" target="_blank" rel="noopener noreferrer" className="link-cta">https://servicios.inamhi.gob.ec/anuarios-metereologicos/</a>
+                  </p>
+                </li>
+
+                {/* CHIRPS */}
+                <li className="border-l-2 border-andean-water pl-3">
+                  <p className="font-semibold text-andean-deep">CHIRPS v2.0 · {isEs ? 'Precipitación satelital' : 'Satellite precipitation'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Funk, C., Peterson, P., Landsfeld, M., Pedreros, D., Verdin, J., Shukla, S., Husak, G., Rowland, J., Harrison, L., Hoell, A., &amp; Michaelsen, J. (2015). The climate hazards infrared precipitation with stations—a new environmental record for monitoring extremes. <em>Scientific Data, 2</em>, 150066. <a href="https://doi.org/10.1038/sdata.2015.66" target="_blank" rel="noopener noreferrer" className="link-cta">https://doi.org/10.1038/sdata.2015.66</a>
+                  </p>
+                </li>
+
+                {/* ERA5-Land */}
+                <li className="border-l-2 border-andean-paramo pl-3">
+                  <p className="font-semibold text-andean-deep">ERA5-Land · {isEs ? 'Reanálisis atmosférico' : 'Atmospheric reanalysis'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Muñoz Sabater, J. (2019). <em>ERA5-Land hourly data from 1950 to present</em> [Conjunto de datos]. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). <a href="https://doi.org/10.24381/cds.e2161bac" target="_blank" rel="noopener noreferrer" className="link-cta">https://doi.org/10.24381/cds.e2161bac</a>
+                  </p>
+                </li>
+
+                {/* TerraClimate */}
+                <li className="border-l-2 border-andean-earth pl-3">
+                  <p className="font-semibold text-andean-deep">TerraClimate · {isEs ? 'Balance hídrico mensual' : 'Monthly water balance'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Abatzoglou, J. T., Dobrowski, S. Z., Parks, S. A., &amp; Hegewisch, K. C. (2018). TerraClimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958–2015. <em>Scientific Data, 5</em>, 170191. <a href="https://doi.org/10.1038/sdata.2017.191" target="_blank" rel="noopener noreferrer" className="link-cta">https://doi.org/10.1038/sdata.2017.191</a>
+                  </p>
+                </li>
+
+                {/* MOD16A2GF */}
+                <li className="border-l-2 border-band-B3 pl-3">
+                  <p className="font-semibold text-andean-deep">MOD16A2GF · {isEs ? 'Evapotranspiración MODIS' : 'MODIS evapotranspiration'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Running, S. W., Mu, Q., Zhao, M., &amp; Moreno, A. (2019). <em>MOD16A2GF MODIS/Terra Net Evapotranspiration Gap-Filled 8-Day L4 Global 500 m SIN Grid V061</em> [Conjunto de datos]. NASA EOSDIS Land Processes DAAC. <a href="https://doi.org/10.5067/MODIS/MOD16A2GF.061" target="_blank" rel="noopener noreferrer" className="link-cta">https://doi.org/10.5067/MODIS/MOD16A2GF.061</a>
+                  </p>
+                </li>
+
+                {/* BASD-CMIP6-PE */}
+                <li className="border-l-2 border-band-B2 pl-3">
+                  <p className="font-semibold text-andean-deep">BASD-CMIP6-PE · {isEs ? 'Proyecciones CMIP6 con sesgo ajustado' : 'Bias-adjusted CMIP6 projections'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Lange, S. (2019). Trend-preserving bias adjustment and statistical downscaling with ISIMIP3BASD (v1.0). <em>Geoscientific Model Development, 12</em>(7), 3055–3070. <a href="https://doi.org/10.5194/gmd-12-3055-2019" target="_blank" rel="noopener noreferrer" className="link-cta">https://doi.org/10.5194/gmd-12-3055-2019</a>
+                  </p>
+                </li>
+
+                {/* ONI */}
+                <li className="border-l-2 border-band-B1 pl-3">
+                  <p className="font-semibold text-andean-deep">ONI · {isEs ? 'Índice oceánico de El Niño' : 'Oceanic Niño Index'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    National Oceanic and Atmospheric Administration. (n. d.). <em>Oceanic Niño Index (ONI)</em> [Conjunto de datos]. NOAA Climate Prediction Center. <a href="https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt" target="_blank" rel="noopener noreferrer" className="link-cta">https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt</a>
+                  </p>
+                </li>
+
+                {/* SRTM */}
+                <li className="border-l-2 border-andean-ash pl-3">
+                  <p className="font-semibold text-andean-deep">SRTM · {isEs ? 'Modelo digital de elevación' : 'Digital elevation model'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Farr, T. G., Rosen, P. A., Caro, E., Crippen, R., Duren, R., Hensley, S., Kobrick, M., Paller, M., Rodriguez, E., Roth, L., Seal, D., Shaffer, S., Shimada, J., Umland, J., Werner, M., Oskin, M., Burbank, D., &amp; Alsdorf, D. (2007). The Shuttle Radar Topography Mission. <em>Reviews of Geophysics, 45</em>(2), RG2004. <a href="https://doi.org/10.1029/2005RG000183" target="_blank" rel="noopener noreferrer" className="link-cta">https://doi.org/10.1029/2005RG000183</a>
+                  </p>
+                </li>
+
+                {/* IGM Ecuador (geometría provincial) */}
+                <li className="border-l-2 border-slate-400 pl-3">
+                  <p className="font-semibold text-andean-deep">{isEs ? 'IGM-INEC Ecuador · Cartografía base' : 'IGM-INEC Ecuador · Base cartography'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    Instituto Geográfico Militar &amp; Instituto Nacional de Estadística y Censos. (2022). <em>División Político-Administrativa del Ecuador (DPA): nivel parroquial</em> [Conjunto de datos espaciales]. IGM-INEC. <a href="https://www.ecuadorencifras.gob.ec" target="_blank" rel="noopener noreferrer" className="link-cta">https://www.ecuadorencifras.gob.ec</a>
+                  </p>
+                </li>
+
+                {/* Foto del Hero */}
+                <li className="border-l-2 border-andean-water pl-3">
+                  <p className="font-semibold text-andean-deep">{isEs ? 'Imagen de portada' : 'Cover image'}</p>
+                  <p className="text-slate-700 mt-1" style={{ textIndent: '-1.5rem', paddingLeft: '1.5rem' }}>
+                    David, C. S. (2015, 31 de diciembre). <em>Volcán Imbabura y Lago San Pablo</em> [Fotografía]. Wikimedia Commons. CC BY-SA 4.0. <a href="https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Imbabura_y_lago_San_Pablo.jpg" target="_blank" rel="noopener noreferrer" className="link-cta">https://commons.wikimedia.org/wiki/File:Volcán_Imbabura_y_lago_San_Pablo.jpg</a>
+                  </p>
+                </li>
               </ul>
-              <p className="text-xs text-slate-600 italic">
+
+              <p className="text-xs text-slate-500 italic mt-4">
                 {isEs
-                  ? 'La consulta académica y científica está autorizada bajo CC BY-NC-SA 4.0 con atribución completa.'
-                  : 'Academic and scientific consultation is authorised under CC BY-NC-SA 4.0 with full attribution.'}
+                  ? 'Cada cita conserva la atribución según los términos institucionales de su fuente. La reutilización de cualquiera de estos productos requiere citarlos directamente desde su DOI o repositorio original.'
+                  : 'Each citation preserves attribution under the institutional terms of its source. Reuse of any of these products requires citing them directly from their DOI or original repository.'}
               </p>
             </div>
 

@@ -56,15 +56,10 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    // Hardening: bloqueo de bots de IA y scrapers
     robots: {
       index: true,
       follow: true,
-      'max-snippet': -1,
-      'max-image-preview': 'standard',
-      noai: true,         // Estándar emergente para excluir entrenamiento IA
-      noimageai: true,
-    } as any,
+    },
   };
 }
 
@@ -89,24 +84,8 @@ export default async function LocaleLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap"
         />
-        {/* === Señales declarativas: políticas de uso por bots y sistemas de IA === */}
-        {/* Estas son SEÑALES que crawlers honestos respetan. NO son barreras técnicas. */}
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:standard, noai, noimageai" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="GPTBot" content="noindex, nofollow" />
-        <meta name="ChatGPT-User" content="noindex, nofollow" />
-        <meta name="ClaudeBot" content="noindex, nofollow" />
-        <meta name="Google-Extended" content="noindex, nofollow" />
-        <meta name="anthropic-ai" content="noindex, nofollow" />
-        <meta name="CCBot" content="noindex, nofollow" />
-        <meta name="PerplexityBot" content="noindex, nofollow" />
-        <meta name="ai-content-declaration" content="human-authored" />
-        <meta name="ai-training" content="prohibited" />
-        <meta name="content-mining" content="prohibited" />
-        {/* Aviso legal de copyright (texto consultivo) */}
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:standard" />
         <meta name="copyright" content="© 2026 Víctor Hugo Pinto-Páez · CC BY-NC-SA 4.0 · Datos primarios © INAMHI Ecuador" />
-        <meta name="usage-rights" content="non-commercial-academic-only" />
-        {/* Referrer policy (sí funciona como meta) */}
         <meta name="referrer" content="strict-origin-when-cross-origin" />
       </head>
       <body className="min-h-screen flex flex-col">
