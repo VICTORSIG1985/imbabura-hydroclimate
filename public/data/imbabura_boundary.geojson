@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.28,
+              0.12
+            ],
+            [
+              -77.81,
+              0.12
+            ],
+            [
+              -77.81,
+              0.88
+            ],
+            [
+              -79.28,
+              0.88
+            ],
+            [
+              -79.28,
+              0.12
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Imbabura Province (bbox approximation)",
+        "area_km2": 4599,
+        "elevation_min_m": 675,
+        "elevation_max_m": 4939,
+        "note": "Replace with real shapefile via ArcGIS Pro MCP"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "geoportal-hidroclima",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "geoportal-hidroclima", "run", "dev"],
+      "port": 3001
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+.env*
+.DS_Store
+*.log
+scripts/_wiley_pkg/
+scripts/_tables_json/
+scripts/_si_extract/
+scripts/_manuscript_extract/
+scripts/_cl_extract/

@@ -1,0 +1,4706 @@
+[
+  {
+    "station_id": "M0001",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.394,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4496,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.4857,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.494,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.13,
+    "p_value": 0.00248,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1451,
+    "p_value": 0.00072,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1645,
+    "p_value": 0.00012,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1849,
+    "p_value": 2e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.0355,
+    "p_value": 0.41056,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.0515,
+    "p_value": 0.23262,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.0713,
+    "p_value": 0.09808,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.0926,
+    "p_value": 0.03146,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1096,
+    "p_value": 0.01083,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1334,
+    "p_value": 0.00189,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1592,
+    "p_value": 0.0002,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1811,
+    "p_value": 2e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.224,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2455,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2658,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2881,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.193,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2048,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2217,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2401,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2023,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2155,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2318,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2501,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1962,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2056,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2214,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2421,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1683,
+    "p_value": 9e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1808,
+    "p_value": 2e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1978,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2155,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.193,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2048,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2217,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2401,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1351,
+    "p_value": 0.00165,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1485,
+    "p_value": 0.00054,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1679,
+    "p_value": 9e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1892,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.0843,
+    "p_value": 0.05019,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.0988,
+    "p_value": 0.02164,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1213,
+    "p_value": 0.00476,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1485,
+    "p_value": 0.00054,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.3561,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4008,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.439,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.4677,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.4404,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4906,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.5242,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.5344,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.224,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2455,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2658,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2881,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1145,
+    "p_value": 0.00776,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1253,
+    "p_value": 0.00353,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1408,
+    "p_value": 0.00103,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1592,
+    "p_value": 0.0002,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.4235,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4573,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.4741,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.469,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.4235,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4573,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.4741,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.469,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.4453,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4685,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.4745,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.4596,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.3561,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4008,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.439,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.4677,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.394,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4496,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.4857,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMAX_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.494,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2353,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2433,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2496,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.248,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1562,
+    "p_value": 0.00027,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1529,
+    "p_value": 0.00036,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1504,
+    "p_value": 0.00045,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1537,
+    "p_value": 0.00034,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1546,
+    "p_value": 0.00031,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1506,
+    "p_value": 0.00044,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1455,
+    "p_value": 0.0007,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1486,
+    "p_value": 0.00053,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1389,
+    "p_value": 0.00121,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1335,
+    "p_value": 0.00187,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1292,
+    "p_value": 0.00262,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1338,
+    "p_value": 0.00184,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2557,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2547,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2544,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2548,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2129,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2084,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2042,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2056,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2086,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2052,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2038,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.209,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2286,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2259,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2246,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2271,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1923,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1908,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1911,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1939,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2129,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2084,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2042,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2056,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1838,
+    "p_value": 2e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1848,
+    "p_value": 2e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1862,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1893,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1307,
+    "p_value": 0.00234,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1214,
+    "p_value": 0.00473,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1137,
+    "p_value": 0.0082,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1124,
+    "p_value": 0.00892,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2255,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2228,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2199,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2169,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.312,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.3205,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.3171,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.301,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2557,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2547,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2544,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2548,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1417,
+    "p_value": 0.00096,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1332,
+    "p_value": 0.00193,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.1267,
+    "p_value": 0.00317,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.1263,
+    "p_value": 0.00328,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2542,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2659,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2733,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2742,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2542,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2659,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2733,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2742,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2657,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2889,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.3008,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.299,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2255,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2228,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2199,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2169,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2353,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2433,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2496,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMIN_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.248,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.2137,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.2399,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2526,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.2417,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.046,
+    "p_value": 0.28593,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0086",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": 0.0038,
+    "p_value": 0.93022,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0086",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0324,
+    "p_value": 0.45201,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0086",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0614,
+    "p_value": 0.15447,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.0145,
+    "p_value": 0.73746,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.0531,
+    "p_value": 0.21796,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0807,
+    "p_value": 0.06085,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0981,
+    "p_value": 0.02261,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.0207,
+    "p_value": 0.6313,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0104",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.0239,
+    "p_value": 0.57966,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0104",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0572,
+    "p_value": 0.1841,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0104",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0766,
+    "p_value": 0.07518,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0105",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.1857,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.2184,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2409,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.2505,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.0379,
+    "p_value": 0.3795,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0107",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": 0.0046,
+    "p_value": 0.91531,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0107",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0317,
+    "p_value": 0.46234,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0107",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0669,
+    "p_value": 0.12061,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M1240",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.0428,
+    "p_value": 0.32128,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M1240",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.073,
+    "p_value": 0.09009,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M1240",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.1011,
+    "p_value": 0.01878,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.1269,
+    "p_value": 0.00314,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.0083,
+    "p_value": 0.84724,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0021",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.0418,
+    "p_value": 0.33229,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0021",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0768,
+    "p_value": 0.07471,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0021",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.1089,
+    "p_value": 0.01135,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.0164,
+    "p_value": 0.70413,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0310",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.0118,
+    "p_value": 0.78505,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0310",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0387,
+    "p_value": 0.36942,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0310",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0649,
+    "p_value": 0.13225,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0312",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.0379,
+    "p_value": 0.3795,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0312",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": 0.0046,
+    "p_value": 0.91531,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0312",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0317,
+    "p_value": 0.46234,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0312",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0669,
+    "p_value": 0.12061,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0314",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.0446,
+    "p_value": 0.30141,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0314",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": 0.0094,
+    "p_value": 0.82688,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0314",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.0239,
+    "p_value": 0.57974,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0314",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0552,
+    "p_value": 0.2002,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.0594,
+    "p_value": 0.16832,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": 0.026,
+    "p_value": 0.54713,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.004,
+    "p_value": 0.9259,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0316,
+    "p_value": 0.46349,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0317",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.202,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.23,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2449,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.2398,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.1972,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.2227,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2359,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.2266,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.1857,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.2184,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2409,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.2505,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": 0.0809,
+    "p_value": 0.06015,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0324",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": 0.0528,
+    "p_value": 0.22042,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0324",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": 0.0251,
+    "p_value": 0.56099,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0324",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.0022,
+    "p_value": 0.95906,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0325",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.2123,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.2265,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2236,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.1993,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.2123,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.2265,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2236,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.1993,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.1774,
+    "p_value": 3e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.1808,
+    "p_value": 2e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.1644,
+    "p_value": 0.00012,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.1357,
+    "p_value": 0.00158,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.202,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.23,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2449,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.2398,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 0,
+    "rho": -0.2137,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 1,
+    "rho": -0.2399,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 2,
+    "rho": -0.2526,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "HR_ERA5_pct",
+    "lag_months": 3,
+    "rho": -0.2417,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1931,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.2143,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.2336,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.2345,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.0918,
+    "p_value": 0.03495,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1068,
+    "p_value": 0.01412,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1284,
+    "p_value": 0.00312,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1523,
+    "p_value": 0.00044,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1571,
+    "p_value": 0.00029,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1747,
+    "p_value": 5e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1951,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.2142,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1046,
+    "p_value": 0.01616,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1096,
+    "p_value": 0.01172,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1209,
+    "p_value": 0.00542,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.137,
+    "p_value": 0.0016,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.144,
+    "p_value": 0.0009,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1623,
+    "p_value": 0.00018,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1821,
+    "p_value": 3e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1925,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.0987,
+    "p_value": 0.02337,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1064,
+    "p_value": 0.0144,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.121,
+    "p_value": 0.00535,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1341,
+    "p_value": 0.00202,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.0939,
+    "p_value": 0.031,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.0999,
+    "p_value": 0.02174,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1139,
+    "p_value": 0.00881,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1313,
+    "p_value": 0.0025,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.0818,
+    "p_value": 0.0604,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0021",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.0925,
+    "p_value": 0.03366,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1108,
+    "p_value": 0.01085,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.13,
+    "p_value": 0.00277,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.0956,
+    "p_value": 0.02806,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1009,
+    "p_value": 0.02036,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1135,
+    "p_value": 0.00906,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1316,
+    "p_value": 0.00245,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1056,
+    "p_value": 0.01517,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1138,
+    "p_value": 0.00885,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1281,
+    "p_value": 0.0032,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1414,
+    "p_value": 0.00112,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.0967,
+    "p_value": 0.02628,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1206,
+    "p_value": 0.00551,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1495,
+    "p_value": 0.00057,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1743,
+    "p_value": 6e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1165,
+    "p_value": 0.00738,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1262,
+    "p_value": 0.00367,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1413,
+    "p_value": 0.00113,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1595,
+    "p_value": 0.00023,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1272,
+    "p_value": 0.00341,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1453,
+    "p_value": 0.00081,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1664,
+    "p_value": 0.00012,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1794,
+    "p_value": 3e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1896,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.2122,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.2344,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.2407,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1261,
+    "p_value": 0.00371,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.139,
+    "p_value": 0.00137,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1572,
+    "p_value": 0.00029,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1715,
+    "p_value": 7e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1049,
+    "p_value": 0.01587,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1211,
+    "p_value": 0.00534,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1437,
+    "p_value": 0.00093,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1668,
+    "p_value": 0.00012,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.221,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.245,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.2635,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.2613,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.2191,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.2417,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.2618,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.2633,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.2234,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.2459,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.2624,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.2591,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1272,
+    "p_value": 0.00341,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.1453,
+    "p_value": 0.00081,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.1664,
+    "p_value": 0.00012,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.1794,
+    "p_value": 3e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 0,
+    "rho": 0.1913,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 1,
+    "rho": 0.2127,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 2,
+    "rho": 0.2334,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "ETP_TERRA_mm",
+    "lag_months": 3,
+    "rho": 0.2363,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0607,
+    "p_value": 0.16352,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0357,
+    "p_value": 0.41328,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0186,
+    "p_value": 0.66944,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0083,
+    "p_value": 0.84999,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0757,
+    "p_value": 0.08241,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0525,
+    "p_value": 0.22826,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0359,
+    "p_value": 0.41093,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0239,
+    "p_value": 0.58358,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0584,
+    "p_value": 0.18003,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0372,
+    "p_value": 0.39356,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0229,
+    "p_value": 0.5993,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0154,
+    "p_value": 0.7237,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0749,
+    "p_value": 0.0855,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0516,
+    "p_value": 0.23691,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0349,
+    "p_value": 0.42399,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0223,
+    "p_value": 0.60971,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0987,
+    "p_value": 0.02332,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0752,
+    "p_value": 0.08431,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0582,
+    "p_value": 0.18151,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0452,
+    "p_value": 0.30014,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0911,
+    "p_value": 0.03632,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0647,
+    "p_value": 0.13776,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0444,
+    "p_value": 0.30884,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0279,
+    "p_value": 0.52198,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0968,
+    "p_value": 0.02617,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0704,
+    "p_value": 0.10627,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0503,
+    "p_value": 0.24904,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0341,
+    "p_value": 0.43359,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0882,
+    "p_value": 0.0427,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0616,
+    "p_value": 0.15754,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0416,
+    "p_value": 0.33952,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0253,
+    "p_value": 0.56253,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.09,
+    "p_value": 0.0386,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0649,
+    "p_value": 0.13643,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0459,
+    "p_value": 0.29243,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0312,
+    "p_value": 0.47388,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0938,
+    "p_value": 0.03112,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0673,
+    "p_value": 0.12245,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0469,
+    "p_value": 0.2822,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0303,
+    "p_value": 0.48747,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0861,
+    "p_value": 0.04805,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0631,
+    "p_value": 0.14747,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0466,
+    "p_value": 0.28543,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0344,
+    "p_value": 0.42965,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0812,
+    "p_value": 0.0624,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0577,
+    "p_value": 0.18577,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.04,
+    "p_value": 0.35852,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.027,
+    "p_value": 0.53531,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0933,
+    "p_value": 0.03199,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0668,
+    "p_value": 0.12516,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0469,
+    "p_value": 0.28157,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0314,
+    "p_value": 0.47147,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0638,
+    "p_value": 0.1431,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0399,
+    "p_value": 0.36023,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0239,
+    "p_value": 0.58346,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0142,
+    "p_value": 0.7447,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.1009,
+    "p_value": 0.02038,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0777,
+    "p_value": 0.07444,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0614,
+    "p_value": 0.15916,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0481,
+    "p_value": 0.26998,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0934,
+    "p_value": 0.03189,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0723,
+    "p_value": 0.09678,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0576,
+    "p_value": 0.18644,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0461,
+    "p_value": 0.29086,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0556,
+    "p_value": 0.20212,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.026,
+    "p_value": 0.55044,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0057,
+    "p_value": 0.89673,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": 0.0076,
+    "p_value": 0.86096,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.082,
+    "p_value": 0.05985,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0561,
+    "p_value": 0.1982,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0381,
+    "p_value": 0.38227,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0256,
+    "p_value": 0.55792,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0534,
+    "p_value": 0.22043,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0179,
+    "p_value": 0.681,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": 0.0092,
+    "p_value": 0.83359,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": 0.0287,
+    "p_value": 0.51054,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0933,
+    "p_value": 0.03199,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0668,
+    "p_value": 0.12516,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0469,
+    "p_value": 0.28157,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0314,
+    "p_value": 0.47147,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PDSI_TERRA",
+    "lag_months": 0,
+    "rho": -0.0657,
+    "p_value": 0.13181,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PDSI_TERRA",
+    "lag_months": 1,
+    "rho": -0.0407,
+    "p_value": 0.35014,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PDSI_TERRA",
+    "lag_months": 2,
+    "rho": -0.0238,
+    "p_value": 0.58541,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PDSI_TERRA",
+    "lag_months": 3,
+    "rho": -0.0136,
+    "p_value": 0.75454,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.5412,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.5846,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.6095,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.6039,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.212,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2222,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2303,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.243,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2674,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2867,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.3001,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.3145,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.1868,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.1973,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2061,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2186,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.3716,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.3859,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.3951,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.403,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.27,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2791,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2854,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2957,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.303,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.3142,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.3207,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.33,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.3012,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.3114,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.318,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.3275,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2693,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2805,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2877,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2987,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.27,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2791,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2854,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2957,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2513,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.264,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2729,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.286,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2163,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.2268,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2342,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2476,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.4597,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4848,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.5021,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.5088,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.5484,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.5901,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.613,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.6046,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.3716,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.3859,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.3951,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.403,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.2027,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.213,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.2207,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.2338,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.5557,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.5795,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.5906,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.5817,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.5557,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.5795,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.5906,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.5817,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.5979,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.6232,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.6285,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.61,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.4597,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.4848,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.5021,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.5088,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 0,
+    "rho": 0.5412,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 1,
+    "rho": 0.5846,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 2,
+    "rho": 0.6095,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "TMED_ERA5_C",
+    "lag_months": 3,
+    "rho": 0.6039,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.1044,
+    "p_value": 0.01525,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.1315,
+    "p_value": 0.0022,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.149,
+    "p_value": 0.00051,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0001",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.15,
+    "p_value": 0.00047,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2254,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2342,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.239,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0086",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2368,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2401,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2562,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2672,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0103",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2685,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2311,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.239,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2439,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0104",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2376,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.1974,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2175,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2311,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0105",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2298,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2198,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2379,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2497,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0107",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2457,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2572,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2726,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2845,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M1240",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.286,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.1747,
+    "p_value": 4e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.191,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2027,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0021",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.201,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2396,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2495,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2624,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0310",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2725,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2147,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2302,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2397,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0312",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2361,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2282,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2384,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2459,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0314",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2469,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2298,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2468,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2619,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0315",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.2711,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.1599,
+    "p_value": 0.00019,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.1765,
+    "p_value": 4e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.1893,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0317",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.1885,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.0906,
+    "p_value": 0.03535,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.1179,
+    "p_value": 0.00608,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.1357,
+    "p_value": 0.00157,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0318",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.1375,
+    "p_value": 0.00136,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.1913,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2008,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2106,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0321",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.211,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.2686,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.2811,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.2932,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0324",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.3001,
+    "p_value": 0.0,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.0595,
+    "p_value": 0.16751,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.0892,
+    "p_value": 0.03822,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.1106,
+    "p_value": 0.01008,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0325",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.1152,
+    "p_value": 0.00736,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.063,
+    "p_value": 0.14348,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.0924,
+    "p_value": 0.03181,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.1127,
+    "p_value": 0.00875,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0326",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.1166,
+    "p_value": 0.00669,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.0271,
+    "p_value": 0.53036,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.0583,
+    "p_value": 0.17605,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.0826,
+    "p_value": 0.05495,
+    "significant_raw": false
+  },
+  {
+    "station_id": "M0327",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.091,
+    "p_value": 0.03459,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.1599,
+    "p_value": 0.00019,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.1765,
+    "p_value": 4e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.1893,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0328",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.1885,
+    "p_value": 1e-05,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 0,
+    "rho": -0.1096,
+    "p_value": 0.01083,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 1,
+    "rho": -0.137,
+    "p_value": 0.00142,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 2,
+    "rho": -0.1556,
+    "p_value": 0.00028,
+    "significant_raw": true
+  },
+  {
+    "station_id": "M0909",
+    "variable": "PRECIP_CHIRPS_mm",
+    "lag_months": 3,
+    "rho": -0.1566,
+    "p_value": 0.00026,
+    "significant_raw": true
+  }
+]
