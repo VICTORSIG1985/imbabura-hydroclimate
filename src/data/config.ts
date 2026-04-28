@@ -95,7 +95,7 @@ export const VIEWER_MODES = [
   { id: 'F', key: 'traceability',  icon: '🔗', color: '#4b5563' },
 ] as const;
 
-// Menú principal (9 items + selector idioma)
+// Menú principal (8 items + selector idioma)
 export const MENU = [
   { slug: '',              key: 'home' },
   { slug: 'visor',         key: 'viewer' },
@@ -103,7 +103,6 @@ export const MENU = [
   { slug: 'estaciones',    key: 'stations' },
   { slug: 'metodologia',   key: 'methodology' },
   { slug: 'validacion',    key: 'validation' },
-  { slug: 'datos',         key: 'data' },
   { slug: 'galeria',       key: 'gallery' },
   { slug: 'acerca',        key: 'about' },
 ] as const;

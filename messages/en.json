@@ -2,7 +2,7 @@
   "site": {
     "title": "Imbabura Hydroclimatic Geoportal",
     "tagline": "Trends 1981–2025 · ENSO · CMIP6 projections · 1981–2070",
-    "description": "Bilingual scientific geoportal with multi-source hydroclimatic evidence for Imbabura Province, Ecuador, linked to the manuscript submitted to the International Journal of Climatology.",
+    "description": "Bilingual scientific geoportal with multi-source hydroclimatic evidence for Imbabura Province, Ecuador.",
     "open_viewer": "Open climate viewer",
     "view_results": "View results",
     "download_data": "Download data",
@@ -24,7 +24,7 @@
   "home": {
     "hero_kicker": "Imbabura, Ecuador · 1981–2070",
     "hero_title": "Imbabura Hydroclimatic Geoportal",
-    "hero_subtitle": "A scientific-territorial showcase of observed, satellite, reanalysed and projected climate evidence for the province — linked to the manuscript submitted to the International Journal of Climatology.",
+    "hero_subtitle": "A scientific-territorial showcase of observed, satellite, reanalysed and projected climate evidence for the province · 21 INAMHI stations · 1981–2070.",
     "hero_cta_primary": "Open climate viewer",
     "hero_cta_secondary": "See key findings",
     "kpis_title": "Key findings",

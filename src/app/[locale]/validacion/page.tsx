@@ -22,7 +22,7 @@ export default async function ValidationPage({ params }: { params: Promise<{ loc
 
         <div className="mt-12">
           <h3 className="heading-3 text-andean-deep mb-1">{t('additional_validations_title')}</h3>
-          <p className="text-sm text-slate-600 mb-5">{t('additional_validations_subtitle')}</p>
+          <p className="text-sm text-slate-600 mb-5 max-w-3xl">{t('additional_validations_subtitle')}</p>
           <div className="grid lg:grid-cols-2 gap-4">
             <BootstrapENSOMedian />
             <PValueDistribution />

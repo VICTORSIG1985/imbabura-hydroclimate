@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import PageHero from '@/components/PageHero';
 import KPIBox from '@/components/KPIBox';
 import TerritoryContext from '@/components/TerritoryContext';
 import { asset } from '@/lib/assets';
@@ -15,21 +14,24 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
 
 function HomeContent({ locale }: { locale: Locale }) {
   const t = useTranslations('home');
+  const isEs = locale === 'es';
 
   return (
     <>
-      {/* Hero */}
+      {/* Hero con foto del volcán Imbabura + lago San Pablo */}
       <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-andean-deep via-andean-water to-andean-paramo"
-          style={{
-            backgroundImage: `linear-gradient(135deg, rgba(10,37,64,0.92), rgba(29,78,216,0.85)), url(${asset('/graphical_abstract.png')})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
+        <picture className="absolute inset-0">
+          <source media="(max-width: 768px)" srcSet={asset('/img/imbabura/hero_volcan_lago_san_pablo_sm.jpg')} />
+          <img
+            src={asset('/img/imbabura/hero_volcan_lago_san_pablo.jpg')}
+            alt="Volcán Imbabura y Lago San Pablo"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </picture>
+        <div className="absolute inset-0 bg-gradient-to-br from-andean-deep/85 via-andean-deep/60 to-andean-water/70" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
-        <div className="relative container-page py-20 sm:py-28">
+
+        <div className="relative container-page py-24 sm:py-32">
           <p className="inline-block bg-white/10 backdrop-blur border border-white/20 rounded-full text-xs font-semibold tracking-wide uppercase text-andean-snow px-3 py-1 mb-5">
             {t('hero_kicker')}
           </p>
@@ -43,13 +45,23 @@ function HomeContent({ locale }: { locale: Locale }) {
               {t('hero_cta_secondary')}
             </a>
           </div>
+
+          {/* Crédito de la imagen */}
+          <p className="absolute bottom-3 right-4 text-[10px] text-white/60 italic">
+            {isEs ? 'Foto: Volcán Imbabura y Lago San Pablo · ' : 'Photo: Imbabura Volcano and San Pablo Lake · '}
+            <a href="https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Imbabura_y_lago_San_Pablo.jpg" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+              David C. S. (2015) · CC BY-SA 4.0
+            </a>
+          </p>
         </div>
       </section>
 
       {/* KPIs */}
       <section id="kpis" className="section">
         <h2 className="heading-2 mb-1 text-andean-deep">{t('kpis_title')}</h2>
-        <p className="text-sm text-slate-600 mb-6">International Journal of Climatology · Wiley · DOI 10.5281/zenodo.19821757</p>
+        <p className="text-sm text-slate-600 mb-6">
+          {isEs ? '21 estaciones INAMHI · 1981–2070 · auditoría científica con score 90/100' : '21 INAMHI stations · 1981–2070 · scientific audit score 90/100'}
+        </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           <KPIBox label={t('kpi_period')}    value={t('kpi_period_value')}   sub={t('kpi_period_sub')} />
           <KPIBox label={t('kpi_warming')}   value={t('kpi_warming_value')}  sub={t('kpi_warming_sub')} accent="red" />
@@ -65,10 +77,10 @@ function HomeContent({ locale }: { locale: Locale }) {
         <h2 className="heading-2 mb-6 text-andean-deep">{t('what_title')}</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { icon: '🌎', title: t('what_obs_title'),    desc: t('what_obs_desc'),    href: '/visor#A' },
-            { icon: '📈', title: t('what_trends_title'), desc: t('what_trends_desc'), href: '/visor#B' },
-            { icon: '🌊', title: t('what_enso_title'),   desc: t('what_enso_desc'),   href: '/visor#D' },
-            { icon: '🔭', title: t('what_cmip6_title'),  desc: t('what_cmip6_desc'),  href: '/visor#E' },
+            { icon: '🌎', title: t('what_obs_title'),    desc: t('what_obs_desc'),    href: '/visor' },
+            { icon: '📈', title: t('what_trends_title'), desc: t('what_trends_desc'), href: '/resultados' },
+            { icon: '🌊', title: t('what_enso_title'),   desc: t('what_enso_desc'),   href: '/resultados' },
+            { icon: '🔭', title: t('what_cmip6_title'),  desc: t('what_cmip6_desc'),  href: '/resultados' },
           ].map(({ icon, title, desc, href }) => (
             <Link
               key={title}
@@ -104,15 +116,15 @@ function HomeContent({ locale }: { locale: Locale }) {
             </div>
             <div className="flex-1">
               <p className="text-xs uppercase tracking-wider font-bold text-andean-water">
-                {locale === 'es' ? 'Validación científica · Score 90/100' : 'Scientific validation · Score 90/100'}
+                {isEs ? 'Validación científica · Score 90/100' : 'Scientific validation · Score 90/100'}
               </p>
               <h3 className="heading-3 text-andean-deep mt-1 group-hover:text-andean-water transition">
-                {locale === 'es' ? 'Auditoría metodológica con estándares IPCC AR6, WMO y Pepin et al. 2022' : 'Methodological audit against IPCC AR6, WMO and Pepin et al. 2022 standards'}
+                {isEs ? 'Auditoría metodológica con estándares IPCC AR6, WMO y Pepin et al. 2022' : 'Methodological audit against IPCC AR6, WMO and Pepin et al. 2022 standards'}
               </h3>
               <p className="text-sm text-slate-600 mt-1">
-                {locale === 'es'
-                  ? 'Veredicto: válido con limitaciones declaradas · 14 verificaciones pasadas · primer estudio andino ecuatoriano que cumple MMK + FDR + Bootstrap + trazabilidad simultáneamente.'
-                  : 'Verdict: valid with declared limitations · 14 checks passed · first Ecuadorian Andean study to simultaneously meet MMK + FDR + Bootstrap + traceability.'}
+                {isEs
+                  ? 'Veredicto: válido con limitaciones declaradas · 14 verificaciones pasadas · 7 estándares internacionales cumplidos.'
+                  : 'Verdict: valid with declared limitations · 14 checks passed · 7 international standards met.'}
               </p>
             </div>
             <span className="text-andean-water font-bold text-lg group-hover:translate-x-1 transition-transform">→</span>

@@ -1,8 +1,11 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import dynamic from 'next/dynamic';
 import { promises as fs } from 'fs';
 import path from 'path';
 import PageHero from '@/components/PageHero';
 import type { Locale } from '@/i18n/config';
+
+const StationsBigMap = dynamic(() => import('@/components/StationsBigMap'), { ssr: false });
 
 interface StationFeature {
   properties: {
@@ -17,7 +20,6 @@ interface StationFeature {
     era5_pixel_id: string;
     shared_with: string[];
     in_situ_months: number;
-    note: string | null;
   };
 }
 
@@ -33,11 +35,29 @@ export default async function StationsPage({ params }: { params: Promise<{ local
   setRequestLocale(locale);
   const t = await getTranslations('stations');
   const stations = await loadStations();
+  const isEs = locale === 'es';
 
   return (
     <>
-      <PageHero kicker="§3.1 · Table 1" title={t('title')} subtitle={t('subtitle')} variant="compact" />
-      <section className="section">
+      <PageHero kicker="§3.1 · Tabla 1" title={t('title')} subtitle={t('subtitle')} variant="compact" />
+
+      {/* Mapa grande */}
+      <section className="container-page py-6">
+        <div className="rounded-xl overflow-hidden border border-slate-200 bg-white" style={{ height: '70vh', minHeight: 500 }}>
+          <StationsBigMap />
+        </div>
+        <p className="text-xs text-slate-500 italic mt-2">
+          {isEs
+            ? 'Click sobre una estación para ver su perfil temporal · color por banda altitudinal · 6 cantones rotulados.'
+            : 'Click on a station to view its temporal profile · colour by altitudinal band · 6 cantons labelled.'}
+        </p>
+      </section>
+
+      {/* Tabla */}
+      <section className="section pt-0">
+        <h2 className="heading-3 text-andean-deep mb-3">
+          {isEs ? 'Catálogo completo de las 21 estaciones' : 'Complete catalogue of the 21 stations'}
+        </h2>
         <div className="overflow-x-auto bg-white border border-slate-200 rounded-xl">
           <table className="w-full text-sm">
             <thead className="bg-andean-snow border-b border-slate-200">
