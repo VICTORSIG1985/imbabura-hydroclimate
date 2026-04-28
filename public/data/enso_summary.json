@@ -1,0 +1,397 @@
+{
+  "caption_en": "Table 4. ENSO teleconnection summary (Spearman correlation between monthly station-level series and the ONI index, 1981–2025). N tests = stations × lags 0–3 months. N significant reports the count at p<0.05 (raw); for ENSO-precipitation correlations the FDR-BH at q<0.05 retains the same 79/84 detections (FDR-BH applied to the full set of 588 tests is reported in Table S7). The dominant lag is the lag at which the median |rho| is maximal across stations.",
+  "by_variable": [
+    {
+      "Variable": "PRECIP_CHIRPS_mm",
+      "Source": "CHIRPS",
+      "N_tests_total": 84,
+      "N_significant": 79,
+      "Pct_significant": "94.0%",
+      "Dominant_lag_months": 3,
+      "Median_rho_dominant_lag": -0.23,
+      "ENSO_direction": "− (El Niño → decrease)"
+    },
+    {
+      "Variable": "TMED_ERA5_C",
+      "Source": "ERA5-Land",
+      "N_tests_total": 84,
+      "N_significant": 84,
+      "Pct_significant": "100.0%",
+      "Dominant_lag_months": 0,
+      "Median_rho_dominant_lag": 0.303,
+      "ENSO_direction": "+ (El Niño → increase)"
+    },
+    {
+      "Variable": "TMAX_ERA5_C",
+      "Source": "ERA5-Land",
+      "N_tests_total": 84,
+      "N_significant": 80,
+      "Pct_significant": "95.2%",
+      "Dominant_lag_months": 3,
+      "Median_rho_dominant_lag": 0.25,
+      "ENSO_direction": "+ (El Niño → increase)"
+    },
+    {
+      "Variable": "TMIN_ERA5_C",
+      "Source": "ERA5-Land",
+      "N_tests_total": 84,
+      "N_significant": 84,
+      "Pct_significant": "100.0%",
+      "Dominant_lag_months": 0,
+      "Median_rho_dominant_lag": 0.226,
+      "ENSO_direction": "+ (El Niño → increase)"
+    },
+    {
+      "Variable": "HR_ERA5_pct",
+      "Source": "ERA5-Land",
+      "N_tests_total": 84,
+      "N_significant": 44,
+      "Pct_significant": "52.4%",
+      "Dominant_lag_months": 3,
+      "Median_rho_dominant_lag": -0.227,
+      "ENSO_direction": "− (El Niño → decrease)"
+    },
+    {
+      "Variable": "ETP_TERRA_mm",
+      "Source": "TerraClimate",
+      "N_tests_total": 84,
+      "N_significant": 83,
+      "Pct_significant": "98.8%",
+      "Dominant_lag_months": 1,
+      "Median_rho_dominant_lag": 0.139,
+      "ENSO_direction": "+ (El Niño → increase)"
+    },
+    {
+      "Variable": "PDSI_TERRA",
+      "Source": "TerraClimate",
+      "N_tests_total": 84,
+      "N_significant": 11,
+      "Pct_significant": "13.1%",
+      "Dominant_lag_months": 0,
+      "Median_rho_dominant_lag": -0.093,
+      "ENSO_direction": "− (El Niño → decrease)"
+    }
+  ],
+  "fdr_global_caption_en": "Table S7. Multiple-testing correction (Benjamini–Hochberg FDR at q = 0.05) over the global set of 588 ENSO tests (21 stations × 4 lags × 7 variables). Tests are Spearman rank correlations between monthly station-level time series of seven hydroclimatic variables (CHIRPS precipitation; ERA5-Land Tmean, Tmax, Tmin and relative humidity; TerraClimate ETP and PDSI) and the monthly Oceanic Niño Index (ONI). For each (variable, source, lag) cell we report the number of stations with raw p < 0.05 and the number retained after FDR-BH correction applied to the global set of 588 p-values. Reproducibility: scipy.stats.false_discovery_control(method='bh') applied to the P_VALOR column of the project file ENSO_VARIABLES_COMPLETAS.csv (Zenodo concept DOI 10.5281/zenodo.19821757). Final outcome: 463 of 588 correlations remain significant after FDR-BH correction at q = 0.05 (raw count: 465/588). Detailed breakdown follows.",
+  "fdr_breakdown": [
+    {
+      "Variable": "Precipitation",
+      "Source": "CHIRPS",
+      "Lag (months)": 0,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 18,
+      "N sig FDR-BH (q<0.05)": 18,
+      "Median ρ": -0.197,
+      "Min ρ": -0.269,
+      "Max ρ": -0.027
+    },
+    {
+      "Variable": "Precipitation",
+      "Source": "CHIRPS",
+      "Lag (months)": 1,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 20,
+      "N sig FDR-BH (q<0.05)": 20,
+      "Median ρ": -0.217,
+      "Min ρ": -0.281,
+      "Max ρ": -0.058
+    },
+    {
+      "Variable": "Precipitation",
+      "Source": "CHIRPS",
+      "Lag (months)": 2,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 20,
+      "N sig FDR-BH (q<0.05)": 20,
+      "Median ρ": -0.231,
+      "Min ρ": -0.293,
+      "Max ρ": -0.083
+    },
+    {
+      "Variable": "Precipitation",
+      "Source": "CHIRPS",
+      "Lag (months)": 3,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": -0.23,
+      "Min ρ": -0.3,
+      "Max ρ": -0.091
+    },
+    {
+      "Variable": "Tmean",
+      "Source": "ERA5-Land",
+      "Lag (months)": 0,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.303,
+      "Min ρ": 0.187,
+      "Max ρ": 0.598
+    },
+    {
+      "Variable": "Tmean",
+      "Source": "ERA5-Land",
+      "Lag (months)": 1,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.314,
+      "Min ρ": 0.197,
+      "Max ρ": 0.623
+    },
+    {
+      "Variable": "Tmean",
+      "Source": "ERA5-Land",
+      "Lag (months)": 2,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.321,
+      "Min ρ": 0.206,
+      "Max ρ": 0.628
+    },
+    {
+      "Variable": "Tmean",
+      "Source": "ERA5-Land",
+      "Lag (months)": 3,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.33,
+      "Min ρ": 0.219,
+      "Max ρ": 0.61
+    },
+    {
+      "Variable": "Tmax",
+      "Source": "ERA5-Land",
+      "Lag (months)": 0,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 19,
+      "N sig FDR-BH (q<0.05)": 19,
+      "Median ρ": 0.202,
+      "Min ρ": 0.035,
+      "Max ρ": 0.445
+    },
+    {
+      "Variable": "Tmax",
+      "Source": "ERA5-Land",
+      "Lag (months)": 1,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 20,
+      "N sig FDR-BH (q<0.05)": 20,
+      "Median ρ": 0.215,
+      "Min ρ": 0.051,
+      "Max ρ": 0.491
+    },
+    {
+      "Variable": "Tmax",
+      "Source": "ERA5-Land",
+      "Lag (months)": 2,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 20,
+      "N sig FDR-BH (q<0.05)": 20,
+      "Median ρ": 0.232,
+      "Min ρ": 0.071,
+      "Max ρ": 0.524
+    },
+    {
+      "Variable": "Tmax",
+      "Source": "ERA5-Land",
+      "Lag (months)": 3,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.25,
+      "Min ρ": 0.093,
+      "Max ρ": 0.534
+    },
+    {
+      "Variable": "Tmin",
+      "Source": "ERA5-Land",
+      "Lag (months)": 0,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.226,
+      "Min ρ": 0.131,
+      "Max ρ": 0.312
+    },
+    {
+      "Variable": "Tmin",
+      "Source": "ERA5-Land",
+      "Lag (months)": 1,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.223,
+      "Min ρ": 0.121,
+      "Max ρ": 0.321
+    },
+    {
+      "Variable": "Tmin",
+      "Source": "ERA5-Land",
+      "Lag (months)": 2,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.22,
+      "Min ρ": 0.114,
+      "Max ρ": 0.317
+    },
+    {
+      "Variable": "Tmin",
+      "Source": "ERA5-Land",
+      "Lag (months)": 3,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.217,
+      "Min ρ": 0.112,
+      "Max ρ": 0.301
+    },
+    {
+      "Variable": "Relative humidity",
+      "Source": "ERA5-Land",
+      "Lag (months)": 0,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 10,
+      "N sig FDR-BH (q<0.05)": 10,
+      "Median ρ": -0.043,
+      "Min ρ": -0.214,
+      "Max ρ": 0.081
+    },
+    {
+      "Variable": "Relative humidity",
+      "Source": "ERA5-Land",
+      "Lag (months)": 1,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 10,
+      "N sig FDR-BH (q<0.05)": 10,
+      "Median ρ": -0.073,
+      "Min ρ": -0.24,
+      "Max ρ": 0.053
+    },
+    {
+      "Variable": "Relative humidity",
+      "Source": "ERA5-Land",
+      "Lag (months)": 2,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 11,
+      "N sig FDR-BH (q<0.05)": 11,
+      "Median ρ": -0.101,
+      "Min ρ": -0.253,
+      "Max ρ": 0.025
+    },
+    {
+      "Variable": "Relative humidity",
+      "Source": "ERA5-Land",
+      "Lag (months)": 3,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 13,
+      "N sig FDR-BH (q<0.05)": 13,
+      "Median ρ": -0.127,
+      "Min ρ": -0.251,
+      "Max ρ": -0.002
+    },
+    {
+      "Variable": "ETP",
+      "Source": "TerraClimate",
+      "Lag (months)": 0,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 20,
+      "N sig FDR-BH (q<0.05)": 20,
+      "Median ρ": 0.126,
+      "Min ρ": 0.082,
+      "Max ρ": 0.223
+    },
+    {
+      "Variable": "ETP",
+      "Source": "TerraClimate",
+      "Lag (months)": 1,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.139,
+      "Min ρ": 0.092,
+      "Max ρ": 0.246
+    },
+    {
+      "Variable": "ETP",
+      "Source": "TerraClimate",
+      "Lag (months)": 2,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.157,
+      "Min ρ": 0.111,
+      "Max ρ": 0.264
+    },
+    {
+      "Variable": "ETP",
+      "Source": "TerraClimate",
+      "Lag (months)": 3,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 21,
+      "N sig FDR-BH (q<0.05)": 21,
+      "Median ρ": 0.174,
+      "Min ρ": 0.13,
+      "Max ρ": 0.263
+    },
+    {
+      "Variable": "PDSI",
+      "Source": "TerraClimate",
+      "Lag (months)": 0,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 11,
+      "N sig FDR-BH (q<0.05)": 9,
+      "Median ρ": -0.086,
+      "Min ρ": -0.101,
+      "Max ρ": -0.053
+    },
+    {
+      "Variable": "PDSI",
+      "Source": "TerraClimate",
+      "Lag (months)": 1,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 0,
+      "N sig FDR-BH (q<0.05)": 0,
+      "Median ρ": -0.062,
+      "Min ρ": -0.078,
+      "Max ρ": -0.018
+    },
+    {
+      "Variable": "PDSI",
+      "Source": "TerraClimate",
+      "Lag (months)": 2,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 0,
+      "N sig FDR-BH (q<0.05)": 0,
+      "Median ρ": -0.042,
+      "Min ρ": -0.061,
+      "Max ρ": 0.009
+    },
+    {
+      "Variable": "PDSI",
+      "Source": "TerraClimate",
+      "Lag (months)": 3,
+      "N tests": 21,
+      "N sig raw (p<0.05)": 0,
+      "N sig FDR-BH (q<0.05)": 0,
+      "Median ρ": -0.027,
+      "Min ρ": -0.048,
+      "Max ρ": 0.029
+    },
+    {
+      "Variable": "TOTAL",
+      "Source": "",
+      "Lag (months)": "",
+      "N tests": 588,
+      "N sig raw (p<0.05)": 465,
+      "N sig FDR-BH (q<0.05)": 463,
+      "Median ρ": "",
+      "Min ρ": "",
+      "Max ρ": ""
+    }
+  ]
+}

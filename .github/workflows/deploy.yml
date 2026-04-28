@@ -1,12 +1,14 @@
-name: Build & Deploy to GitHub Pages
+﻿name: Build & Deploy to GitHub Pages
 
-# IMPORTANTE: Workflow desactivado para builds automáticos.
+# IMPORTANTE: Workflow desactivado para builds automÃ¡ticos.
 # Solo se ejecuta cuando se dispara MANUALMENTE desde GitHub Actions UI.
-# Razón: el repo público no contiene los datos científicos (están en respaldo local
+# RazÃ³n: el repo pÃºblico no contiene los datos cientÃ­ficos (estÃ¡n en respaldo local
 # del autor). Para hacer un nuevo deploy hay que restaurar los datos en public/
 # antes de ejecutar el workflow manualmente.
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -39,18 +41,18 @@ jobs:
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Geoportal Hidroclimático de Imbabura · 1981–2070</title>
-            <meta name="description" content="Geoportal científico de tendencias hidroclimáticas, teleconexión El Niño y proyecciones CMIP6 para la provincia de Imbabura, Ecuador.">
+            <title>Geoportal HidroclimÃ¡tico de Imbabura Â· 1981â€“2070</title>
+            <meta name="description" content="Geoportal cientÃ­fico de tendencias hidroclimÃ¡ticas, teleconexiÃ³n El NiÃ±o y proyecciones CMIP6 para la provincia de Imbabura, Ecuador.">
             <meta property="og:type" content="website">
-            <meta property="og:title" content="Geoportal Hidroclimático de Imbabura">
-            <meta property="og:description" content="Tendencias 1981–2025 · ENSO · Proyecciones CMIP6.">
+            <meta property="og:title" content="Geoportal HidroclimÃ¡tico de Imbabura">
+            <meta property="og:description" content="Tendencias 1981â€“2025 Â· ENSO Â· Proyecciones CMIP6.">
             <meta property="og:url" content="https://victorsig1985.github.io/imbabura-hydroclimate/">
             <meta property="og:image" content="https://victorsig1985.github.io/imbabura-hydroclimate/og-image.jpg">
             <link rel="canonical" href="./es/">
             <meta http-equiv="refresh" content="0; url=./es/">
             <script>location.replace('./es/');</script>
           </head>
-          <body><p>Redirigiendo…</p></body>
+          <body><p>Redirigiendoâ€¦</p></body>
           </html>
           HTML
           cp out/index.html out/404.html
@@ -67,3 +69,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+

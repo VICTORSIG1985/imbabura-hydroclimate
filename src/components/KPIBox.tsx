@@ -9,6 +9,8 @@ interface Props {
   sub?: string;
   accent?: 'red' | 'blue' | 'green' | 'amber' | 'default';
   explainKey?: 'period' | 'warming' | 'enso' | 'cmip6' | 'lapse' | 'extremes';
+  /** Si se pasa, fuerza el locale (más confiable que useLocale en hidratación) */
+  locale?: 'es' | 'en';
 }
 
 const ACCENTS = {
@@ -82,10 +84,15 @@ const KPI_EXPLAIN: Record<string, { es: { title: string; body: string }; en: { t
   },
 };
 
-export default function KPIBox({ label, value, sub, accent = 'default', explainKey }: Props) {
-  const locale = useLocale() as 'es' | 'en';
+export default function KPIBox({ label, value, sub, accent = 'default', explainKey, locale: localeProp }: Props) {
+  const localeFromHook = useLocale() as 'es' | 'en';
+  const locale: 'es' | 'en' = localeProp ?? (localeFromHook === 'en' ? 'en' : 'es');
   const [open, setOpen] = useState(false);
-  const explanation = explainKey ? KPI_EXPLAIN[explainKey]?.[locale] : null;
+  // Fallback robusto: si por alguna razón no encuentra la entrada en el locale,
+  // intenta el otro idioma para no dejar el bloque vacío
+  const explanation = explainKey
+    ? (KPI_EXPLAIN[explainKey]?.[locale] ?? KPI_EXPLAIN[explainKey]?.[locale === 'es' ? 'en' : 'es'])
+    : null;
 
   return (
     <div className={`bg-white border ${ACCENTS[accent]} rounded-xl shadow-sm transition-all overflow-hidden ${open ? 'col-span-2 sm:col-span-3 lg:col-span-6 ring-2 ring-andean-water/30' : ''}`}>

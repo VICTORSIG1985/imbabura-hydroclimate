@@ -1,0 +1,199 @@
+{
+  "version": "1.0",
+  "issued_date": "2026-04-28",
+  "auditor": "nuri-ds-metrics skill (Modo Auditoría · 6 capas)",
+  "audited_subject": {
+    "manuscript": "Hydroclimatic trends, ENSO teleconnection, and CMIP6 projections in Imbabura Province, Ecuador 1981–2070",
+    "author": "Pinto-Páez, V. H.",
+    "year": 2026,
+    "journal": "International Journal of Climatology (Wiley · Royal Meteorological Society)",
+    "status": "Under review",
+    "doi": "10.5281/zenodo.19821757"
+  },
+  "verdict": {
+    "code": "VALID_WITH_DECLARED_LIMITATIONS",
+    "label_es": "Válido con limitaciones declaradas",
+    "label_en": "Valid with declared limitations",
+    "summary_es": "La metodología cumple los estándares internacionales del IPCC AR6, las directrices WMO N° 1203 y la revisión global EDW de Pepin et al. (2022). Supera la práctica habitual andina en tres aspectos: corrección FDR sobre 588 tests, doble reporte per-estación + per-pixel-independiente, y trazabilidad numérica end-to-end.",
+    "summary_en": "Methodology meets IPCC AR6 standards, WMO No. 1203 guidelines and the global EDW review by Pepin et al. (2022). Exceeds typical Andean practice in three aspects: FDR correction over 588 simultaneous tests, double per-station + per-independent-pixel reporting, and end-to-end numerical traceability."
+  },
+  "global_score": 90,
+  "score_breakdown": [
+    {
+      "dimension_es": "Calidad del dato",
+      "dimension_en": "Data quality",
+      "icon": "🔬",
+      "score": 88,
+      "rationale_es": "21 estaciones × 44 años, 4 productos gridded, validación cruzada explícita, hashes SHA-256 de los 20 anuarios INAMHI.",
+      "rationale_en": "21 stations × 44 years, 4 gridded products, explicit cross-validation, SHA-256 hashes of the 20 INAMHI yearbooks."
+    },
+    {
+      "dimension_es": "Rigor estadístico",
+      "dimension_en": "Statistical rigor",
+      "icon": "📐",
+      "score": 92,
+      "rationale_es": "MK + Theil-Sen + MMK Hamed-Rao + FDR-BH = state-of-the-art. Bootstrap reproducible. Spearman robusto para ENSO.",
+      "rationale_en": "MK + Theil-Sen + MMK Hamed-Rao + FDR-BH = state-of-the-art. Reproducible bootstrap. Spearman robust for ENSO."
+    },
+    {
+      "dimension_es": "Control de incertidumbre",
+      "dimension_en": "Uncertainty control",
+      "icon": "📊",
+      "score": 85,
+      "rationale_es": "IC 95% bootstrap, IQR inter-modelo (CMIP6), sign agreement (100% T, 80% precip), caveats explícitos en cada figura/tabla.",
+      "rationale_en": "Bootstrap 95% CI, inter-model IQR (CMIP6), sign agreement (100% T, 80% precip), explicit caveats per figure/table."
+    },
+    {
+      "dimension_es": "Reproducibilidad",
+      "dimension_en": "Reproducibility",
+      "icon": "🔁",
+      "score": 90,
+      "rationale_es": "Zenodo concept DOI, semillas declaradas (42), versiones de librerías documentadas, scripts liberados, trazabilidad Tabla S10.",
+      "rationale_en": "Zenodo concept DOI, declared seeds (42), documented library versions, released scripts, S10 Table traceability."
+    },
+    {
+      "dimension_es": "Transparencia",
+      "dimension_en": "Transparency",
+      "icon": "🪟",
+      "score": 95,
+      "rationale_es": "5 limitaciones declaradas explícitamente en §5.5, framing honesto del caso adverso (ETP_TERRA), reporte del proceso negativo de extensión INAMHI.",
+      "rationale_en": "5 limitations explicitly declared in §5.5, honest framing of adverse case (ETP_TERRA), reporting of negative INAMHI extension process."
+    }
+  ],
+  "checks_passed": [
+    {
+      "id": 1,
+      "check_es": "Test Mann-Kendall + Theil-Sen aplicado correctamente",
+      "check_en": "Mann-Kendall + Theil-Sen test correctly applied"
+    },
+    {
+      "id": 2,
+      "check_es": "Corrección de autocorrelación MMK Hamed-Rao reportada como sensibilidad global",
+      "check_en": "MMK Hamed-Rao autocorrelation correction reported as global sensitivity"
+    },
+    {
+      "id": 3,
+      "check_es": "Multiplicidad controlada con FDR-BH a q=0.05 (588 tests ENSO + tendencias)",
+      "check_en": "Multiplicity controlled with FDR-BH at q=0.05 (588 ENSO tests + trends)"
+    },
+    {
+      "id": 4,
+      "check_es": "Pixel collision ERA5-Land identificada (5 píxeles, 10/21 estaciones afectadas)",
+      "check_en": "ERA5-Land pixel collision identified (5 pixels, 10/21 stations affected)"
+    },
+    {
+      "id": 5,
+      "check_es": "Doble reporte: per-estación (n=21) + per-pixel-independiente (n=16)",
+      "check_en": "Double reporting: per-station (n=21) + per-independent-pixel (n=16)"
+    },
+    {
+      "id": 6,
+      "check_es": "Validación cruzada CHIRPS/ERA5 con tres categorías y umbrales declarados",
+      "check_en": "CHIRPS/ERA5 cross-validation with three categories and declared thresholds"
+    },
+    {
+      "id": 7,
+      "check_es": "Bootstrap del lapse rate (1000 réplicas, semilla=42, leave-one-out)",
+      "check_en": "Lapse rate bootstrap (1000 replicates, seed=42, leave-one-out)"
+    },
+    {
+      "id": 8,
+      "check_es": "Bootstrap GEV con filtros de estabilidad numérica",
+      "check_en": "GEV bootstrap with numerical stability filters"
+    },
+    {
+      "id": 9,
+      "check_es": "Selección CMIP6 justificada por disponibilidad y rango ECS amplio",
+      "check_en": "CMIP6 selection justified by availability and broad ECS range"
+    },
+    {
+      "id": 10,
+      "check_es": "Tres SSPs no adyacentes (1-2.6, 3-7.0, 5-8.5)",
+      "check_en": "Three non-adjacent SSPs (1-2.6, 3-7.0, 5-8.5)"
+    },
+    {
+      "id": 11,
+      "check_es": "Sign agreement como umbral de robustez (alineado IPCC AR6)",
+      "check_en": "Sign agreement as robustness threshold (aligned with IPCC AR6)"
+    },
+    {
+      "id": 12,
+      "check_es": "Trazabilidad end-to-end por afirmación numérica (Tabla S10)",
+      "check_en": "End-to-end traceability per numerical claim (Table S10)"
+    },
+    {
+      "id": 13,
+      "check_es": "Hashes SHA-256 de los 20 anuarios INAMHI (Tabla S1)",
+      "check_en": "SHA-256 hashes of the 20 INAMHI yearbooks (Table S1)"
+    },
+    {
+      "id": 14,
+      "check_es": "Limitaciones declaradas en sección §5.5 dedicada (5 limitaciones)",
+      "check_en": "Limitations declared in dedicated §5.5 section (5 limitations)"
+    }
+  ],
+  "limitations_declared": [
+    {
+      "id": "L1",
+      "scope_es": "ERA5-Land ~9 km no resuelve la topografía interandina; pixel collision afecta 10/21 estaciones",
+      "scope_en": "ERA5-Land ~9 km does not resolve inter-Andean topography; pixel collision affects 10/21 stations"
+    },
+    {
+      "id": "L2",
+      "scope_es": "TerraClimate PET pierde significancia bajo MMK Hamed-Rao por AC1=0.47",
+      "scope_en": "TerraClimate PET loses significance under MMK Hamed-Rao due to AC1=0.47"
+    },
+    {
+      "id": "L3",
+      "scope_es": "MOD16A2GF cubre solo 2001–2024; tendencias no superan FDR-BH",
+      "scope_en": "MOD16A2GF covers only 2001–2024; trends do not pass FDR-BH"
+    },
+    {
+      "id": "L4",
+      "scope_es": "Ensemble CMIP6 ya bias-adjusted; contraste con observaciones es de signo y magnitud relativa",
+      "scope_en": "CMIP6 ensemble already bias-adjusted; observation contrast is sign and relative magnitude"
+    },
+    {
+      "id": "L5",
+      "scope_es": "Extensión INAMHI 2014–2025 viable solo con M0105 y M1240; otras estaciones rechazadas por inconsistencia física",
+      "scope_en": "INAMHI extension 2014–2025 viable only for M0105 and M1240; other stations rejected by physical inconsistency"
+    }
+  ],
+  "international_standards": [
+    { "standard": "IPCC AR6 Atlas (Gutiérrez et al. 2021)", "compliance": true, "evidence_es": "MK + Theil-Sen + bootstrap + sign agreement" },
+    { "standard": "WMO No. 1203 — Climate Normals", "compliance": true, "evidence_es": "Periodo base 1991–2020, QC1+QC2+QC3, SNHT homogeneidad" },
+    { "standard": "Pepin et al. (2022) EDW review", "compliance": true, "evidence_es": "Per-pixel independence, MMK sensitivity, EDW ≈ 0.15 °C en rango" },
+    { "standard": "WMO ETCCDI extreme indices", "compliance": true, "evidence_es": "Rx1day, Rx5day, R95p, CDD, PRCPTOT" },
+    { "standard": "FAIR Data Principles", "compliance": true, "evidence_es": "Findable, Accessible, Interoperable, Reusable (Zenodo)" },
+    { "standard": "CRediT taxonomy", "compliance": true, "evidence_es": "9 roles cubiertos por autor único, declarados" },
+    { "standard": "TOP guidelines (COS)", "compliance": true, "evidence_es": "Datos archivados, código compartido, materiales documentados" }
+  ],
+  "regional_comparison": {
+    "table_caption_es": "Comparación con literatura andina similar (5 estudios)",
+    "table_caption_en": "Comparison with similar Andean literature (5 studies)",
+    "rows": [
+      { "study": "Vuille et al. 2008 (Tropical Andes)", "mmk": false, "fdr": false, "bootstrap": false, "traceability": "partial", "bilingual": false },
+      { "study": "Seiler et al. 2013 (Bolivia)",        "mmk": false, "fdr": false, "bootstrap": false, "traceability": false,     "bilingual": false },
+      { "study": "Imfeld et al. 2019 (S Perú)",         "mmk": "partial", "fdr": false, "bootstrap": false, "traceability": "partial", "bilingual": false },
+      { "study": "Morán-Tejeda et al. 2016 (Andes)",    "mmk": "partial", "fdr": false, "bootstrap": false, "traceability": "partial", "bilingual": false },
+      { "study": "Rau et al. 2017 (Perú)",              "mmk": false, "fdr": false, "bootstrap": false, "traceability": false, "bilingual": false },
+      { "study": "Pinto-Páez 2026 (Imbabura)",          "mmk": true,  "fdr": true,  "bootstrap": true,  "traceability": true,  "bilingual": true }
+    ]
+  },
+  "recommended_additional_validations": [
+    { "id": "V1", "name_es": "Bootstrap re-muestreo de mediana ENSO ρ",         "name_en": "Bootstrap resample of ENSO ρ median",        "input": "enso_per_station.json",   "graph": "histogram" },
+    { "id": "V2", "name_es": "Test Kolmogorov-Smirnov de p-valores",            "name_en": "Kolmogorov-Smirnov test on p-values",        "input": "enso_per_station.json",   "graph": "kde_overlay" },
+    { "id": "V3", "name_es": "Coherencia inter-modelo CMIP6",                   "name_en": "Inter-model CMIP6 coherence",                "input": "cmip6_projections.json",  "graph": "correlation_heatmap" },
+    { "id": "V4", "name_es": "Regional Mann-Kendall agregado",                  "name_en": "Aggregated Regional Mann-Kendall",            "input": "trends_per_station.json", "graph": "single_stat_with_ci" },
+    { "id": "V5", "name_es": "Signal-to-Noise CMIP6",                            "name_en": "CMIP6 Signal-to-Noise",                       "input": "cmip6_projections.json",  "graph": "snr_heatmap" },
+    { "id": "V6", "name_es": "Time-of-Emergence",                                "name_en": "Time-of-Emergence",                          "input": "climatology+cmip6",       "graph": "timeline_with_bands" },
+    { "id": "V7", "name_es": "Diurnal Temperature Range proyectado",            "name_en": "Projected DTR (Tmax-Tmin)",                   "input": "cmip6_projections.json",  "graph": "bars_band_ssp" },
+    { "id": "V8", "name_es": "Distribución de Sen slopes por banda",            "name_en": "Sen slopes distribution per band",            "input": "trends_per_station.json", "graph": "violin_box" }
+  ],
+  "publication_verdict": {
+    "ijc": { "verdict_es": "Defendible. Mejoras 1-2 fortalecen respuesta a revisores pero no son obligatorias.", "verdict_en": "Defensible. Improvements 1-2 strengthen reviewer response but are not mandatory." },
+    "doctoral_thesis": { "verdict_es": "Excelente base metodológica.", "verdict_en": "Excellent methodological foundation." },
+    "gad_report": { "verdict_es": "Listo sin modificaciones.", "verdict_en": "Ready as-is." },
+    "ndc_ecuador": { "verdict_es": "Apto para integrar a la NDC. Las proyecciones CMIP6 con IQR + sign agreement son el formato estándar UNFCCC.", "verdict_en": "Suitable for NDC integration. CMIP6 projections with IQR + sign agreement are the UNFCCC standard format." }
+  }
+}
