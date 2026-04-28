@@ -4,8 +4,26 @@ out/
 .env*
 .DS_Store
 *.log
+
+# === Datos científicos protegidos (no publicar en repo) ===
+public/data/
+public/figures/
+public/img/
+public/og-image.jpg
+public/graphical_abstract.png
+public/favicon.svg
+
+# === Scripts internos de construcción ===
 scripts/_wiley_pkg/
 scripts/_tables_json/
 scripts/_si_extract/
 scripts/_manuscript_extract/
 scripts/_cl_extract/
+scripts/_guia_extracted/
+scripts/build_data.py
+scripts/build_station_timeseries.py
+scripts/extract_tables.py
+scripts/gpkg_to_geojson.py
+
+# === Carpeta de respaldo local (nunca subir a GitHub) ===
+nuevos_respaldos/
