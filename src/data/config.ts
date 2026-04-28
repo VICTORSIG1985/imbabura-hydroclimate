@@ -24,10 +24,12 @@ export const SITE = {
   publicUrl: 'https://victorsig1985.github.io/imbabura-hydroclimate/',
   doi: '10.5281/zenodo.19821757',
   zenodoUrl: 'https://doi.org/10.5281/zenodo.19821757',
+  manuscriptUrl: 'https://doi.org/10.5281/zenodo.19821757',
   journal: 'International Journal of Climatology',
   publisher: 'Wiley · Royal Meteorological Society',
   year: '2026',
-  license: 'CC-BY-4.0',
+  license: 'CC BY-NC-SA 4.0',
+  licenseUrl: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es',
   basePath: '/imbabura-hydroclimate',
 } as const;
 
@@ -100,8 +102,8 @@ export const MENU = [
   { slug: 'resultados',    key: 'results' },
   { slug: 'estaciones',    key: 'stations' },
   { slug: 'metodologia',   key: 'methodology' },
+  { slug: 'validacion',    key: 'validation' },
   { slug: 'datos',         key: 'data' },
-  { slug: 'trazabilidad',  key: 'traceability' },
   { slug: 'galeria',       key: 'gallery' },
   { slug: 'acerca',        key: 'about' },
 ] as const;

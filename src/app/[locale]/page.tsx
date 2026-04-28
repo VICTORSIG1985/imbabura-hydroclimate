@@ -95,6 +95,31 @@ function HomeContent({ locale }: { locale: Locale }) {
         </div>
       </section>
 
+      {/* Banner de validación científica */}
+      <section className="section pt-0">
+        <Link href={`/${locale}/validacion`} className="block group">
+          <div className="card border-2 border-andean-water bg-gradient-to-br from-blue-50 to-andean-snow flex flex-col sm:flex-row gap-4 items-center hover:shadow-lg transition-shadow">
+            <div className="w-20 h-20 rounded-full bg-andean-deep grid place-items-center text-white shrink-0">
+              <span className="text-3xl font-bold">90</span>
+            </div>
+            <div className="flex-1">
+              <p className="text-xs uppercase tracking-wider font-bold text-andean-water">
+                {locale === 'es' ? 'Validación científica · Score 90/100' : 'Scientific validation · Score 90/100'}
+              </p>
+              <h3 className="heading-3 text-andean-deep mt-1 group-hover:text-andean-water transition">
+                {locale === 'es' ? 'Auditoría metodológica con estándares IPCC AR6, WMO y Pepin et al. 2022' : 'Methodological audit against IPCC AR6, WMO and Pepin et al. 2022 standards'}
+              </h3>
+              <p className="text-sm text-slate-600 mt-1">
+                {locale === 'es'
+                  ? 'Veredicto: válido con limitaciones declaradas · 14 verificaciones pasadas · primer estudio andino ecuatoriano que cumple MMK + FDR + Bootstrap + trazabilidad simultáneamente.'
+                  : 'Verdict: valid with declared limitations · 14 checks passed · first Ecuadorian Andean study to simultaneously meet MMK + FDR + Bootstrap + traceability.'}
+              </p>
+            </div>
+            <span className="text-andean-water font-bold text-lg group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </Link>
+      </section>
+
       {/* CTA visor */}
       <section className="section pt-0 pb-16">
         <div className="bg-gradient-to-r from-andean-deep to-andean-water rounded-2xl p-8 sm:p-12 text-white text-center">
