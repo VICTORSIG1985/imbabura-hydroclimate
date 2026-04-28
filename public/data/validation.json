@@ -1,0 +1,73 @@
+{
+  "caption_en": "Table 5. Cross-validation of CHIRPS and ERA5-Land against the two recent INAMHI automatic stations (M0105 Otavalo and M1240 Ibarra-INAMHI); 4 station-product pairs (CHIRPS–M1240 and CHIRPS–M0105 for monthly precipitation; ERA5-Land–M1240 and ERA5-Land–M0105 for monthly mean temperature). Overlap windows: CHIRPS 2014–2025 (M1240; n = 89) and 2019–2024 (M0105; n = 64); ERA5-Land 2014–2025 (both stations; n = 97 and 89). Metrics: monthly observations (n_meses), Pearson correlation, RMSE, MAE, mean bias and relative bias (%), regression slope. Status thresholds: ACCEPTABLE = r ≥ 0.60 AND |relative bias| ≤ 50 %; LIMITED = 0.40 ≤ r < 0.60 OR 50 % < |relative bias| ≤ 100 %; REJECTED = r < 0.40 OR |relative bias| > 100 %. Resulting labels: CHIRPS–M1240 ACCEPTABLE; CHIRPS–M0105 LIMITED; ERA5-Land–M1240 and ERA5-Land–M0105 REJECTED (systematic warm bias of +8.7 to +9.3 °C over the Imbabura inter-Andean valley, as expected from the ~9-km grid over complex topography). The 1994–2013 INAMHI yearbook block is used as a documentary reference for the climatological in-situ records (§4.1) but does not enter this cross-validation, since the recent automatic block is the only one with hourly-derived observations contemporaneous with the gridded products at the same processing standard.",
+  "rows": [
+    {
+      "Station": "M1240",
+      "Source": "CHIRPS",
+      "Variable": "Monthly precipitation (mm)",
+      "Period": "2014-2025",
+      "Quality": "A+B",
+      "n_months": 89,
+      "r (Pearson)": 0.629,
+      "p-value": "<0.0001",
+      "RMSE": 61.18,
+      "MAE": 51.34,
+      "Bias mean": -45.84,
+      "Bias %": -38.2,
+      "Slope": 0.662,
+      "Intercept": -5.26,
+      "Status": "ACCEPTABLE"
+    },
+    {
+      "Station": "M1240",
+      "Source": "ERA5-Land",
+      "Variable": "Monthly mean temperature (°C)",
+      "Period": "2014-2025",
+      "Quality": "A+B",
+      "n_months": 89,
+      "r (Pearson)": 0.194,
+      "p-value": 0.0681,
+      "RMSE": 9.38,
+      "MAE": 9.35,
+      "Bias mean": 9.35,
+      "Bias %": 137.6,
+      "Slope": 0.13,
+      "Intercept": 15.26,
+      "Status": "REJECTED — systematic warm bias ERA5 (+8.7°C in Andes)"
+    },
+    {
+      "Station": "M0105",
+      "Source": "ERA5-Land",
+      "Variable": "Monthly mean temperature (°C)",
+      "Period": "2014-2025",
+      "Quality": "A+B",
+      "n_months": 97,
+      "r (Pearson)": 0.498,
+      "p-value": "<0.0001",
+      "RMSE": 8.4,
+      "MAE": 8.38,
+      "Bias mean": 8.38,
+      "Bias %": 123.7,
+      "Slope": 0.387,
+      "Intercept": 12.53,
+      "Status": "REJECTED — systematic warm bias ERA5 (+8.7°C in Andes)"
+    },
+    {
+      "Station": "M0105",
+      "Source": "CHIRPS",
+      "Variable": "Monthly precipitation (mm)",
+      "Period": "2019-2024",
+      "Quality": "A+B",
+      "n_months": 64,
+      "r (Pearson)": 0.496,
+      "p-value": "<0.0001",
+      "RMSE": 43.04,
+      "MAE": 34.09,
+      "Bias mean": -17.08,
+      "Bias %": -19.8,
+      "Slope": 0.515,
+      "Intercept": 24.86,
+      "Status": "LIMITED"
+    }
+  ]
+}
