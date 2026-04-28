@@ -1,0 +1,15 @@
+[
+  "climatology.json",
+  "cmip6_projections.json",
+  "enso_per_station.json",
+  "enso_summary.json",
+  "gev_return_levels.json",
+  "imbabura_boundary.geojson",
+  "pixel_mapping.json",
+  "station_ranking.json",
+  "stations.geojson",
+  "traceability.json",
+  "trends_per_station.json",
+  "trends_summary.json",
+  "validation.json"
+]
