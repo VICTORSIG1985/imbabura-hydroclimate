@@ -105,19 +105,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 <ExternalLink className="w-3 h-3"/> {SITE.license}
               </a>
             </div>
-            <div className="card-dark">
-              <h3 className="font-bold mb-2">
-                {isEs ? 'Validación científica' : 'Scientific validation'}
-              </h3>
-              <p className="text-xs text-andean-snow/80 leading-relaxed">
-                {isEs
-                  ? 'Score 90/100 · auditoría metodológica con estándares IPCC AR6, WMO N° 1203 y Pepin et al. (2022).'
-                  : 'Score 90/100 · methodological audit against IPCC AR6, WMO No. 1203 and Pepin et al. (2022) standards.'}
-              </p>
-              <a href={`/${locale}/validacion`} className="inline-flex items-center gap-1 text-xs mt-3 underline text-andean-snow">
-                {isEs ? 'Ver auditoría' : 'View audit'} →
-              </a>
-            </div>
           </aside>
         </div>
       </section>

@@ -21,7 +21,8 @@ export default function Header({ locale }: { locale: Locale }) {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-[var(--nav-height)] bg-white/95 backdrop-blur border-b border-slate-200">
+    <header className="fixed top-0 left-0 right-0 z-50 h-[var(--nav-height)] bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm"
+      style={{ borderImage: 'linear-gradient(90deg, #0a2540 0%, #3a6e3a 50%, #92400e 100%) 1' }}>
       <div className="container-page h-full flex items-center gap-3">
         <Link href={`/${locale}`} className="flex items-center gap-2 shrink-0">
           <span className="w-9 h-9 rounded-lg bg-andean-deep grid place-items-center text-white">

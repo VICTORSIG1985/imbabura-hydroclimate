@@ -10,12 +10,13 @@
   body {
     @apply text-slate-800 antialiased;
     font-family: 'Inter', system-ui, sans-serif;
-    /* Fondo con sutil textura andina — gradiente diagonal muy tenue */
-    background-color: #fafbfc;
+    /* Fondo principal: tono cálido andino + gradientes radiales más visibles */
+    background-color: #f1f5f9;
     background-image:
-      radial-gradient(1200px 800px at 10% -10%, rgba(29, 78, 216, 0.04), transparent 60%),
-      radial-gradient(1000px 700px at 110% 50%, rgba(58, 110, 58, 0.04), transparent 60%),
-      radial-gradient(800px 600px at 50% 110%, rgba(146, 64, 14, 0.03), transparent 60%);
+      radial-gradient(1400px 900px at 0% 0%, rgba(29, 78, 216, 0.10), transparent 55%),
+      radial-gradient(1100px 800px at 100% 30%, rgba(58, 110, 58, 0.08), transparent 55%),
+      radial-gradient(1000px 700px at 50% 100%, rgba(146, 64, 14, 0.06), transparent 55%),
+      radial-gradient(800px 600px at 110% 110%, rgba(10, 37, 64, 0.06), transparent 55%);
     background-attachment: fixed;
   }
   h1, h2, h3, h4 {
@@ -28,13 +29,13 @@
   .container-page { @apply max-w-7xl mx-auto px-4 sm:px-6; }
   .section { @apply container-page py-10 sm:py-14; }
 
-  /* Card con borde delicado y sombra sutil */
+  /* Card sólida con sombra suave */
   .card {
-    @apply bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-5 shadow-sm
+    @apply bg-white border border-slate-200 rounded-xl p-5 shadow-sm
            hover:shadow-md transition-shadow;
   }
   .card-dark {
-    @apply text-slate-100 border border-slate-700 rounded-xl p-5;
+    @apply text-slate-100 border border-slate-700 rounded-xl p-5 shadow-md;
     background: linear-gradient(135deg, #0a2540 0%, #1d4ed8 100%);
   }
 
@@ -52,10 +53,8 @@
            font-medium px-3 py-1.5 rounded-lg transition-colors;
   }
 
-  /* KPI con glassmorphism + gradiente sutil */
   .kpi-box {
-    @apply flex flex-col bg-gradient-to-br from-white to-andean-snow/50
-           backdrop-blur-sm border border-slate-200 rounded-xl p-5 hover:shadow-md transition-shadow;
+    @apply flex flex-col bg-white border border-slate-200 rounded-xl p-5 hover:shadow-md transition-shadow shadow-sm;
   }
 
   .pill {
@@ -75,19 +74,30 @@
   .body-lg { @apply text-base sm:text-lg leading-relaxed text-slate-700; }
   .small { @apply text-xs sm:text-sm text-slate-500; }
 
-  /* Sección con bandas de fondo alternadas para romper el blanco uniforme */
+  /* Bloques decorativos con franja sutil de color andino — más visibles que antes */
   .section-tinted {
-    @apply relative;
     background:
-      linear-gradient(180deg, transparent 0%, rgba(29, 78, 216, 0.025) 50%, transparent 100%);
+      linear-gradient(180deg,
+        rgba(29, 78, 216, 0.06) 0%,
+        rgba(29, 78, 216, 0.02) 50%,
+        transparent 100%);
+    border-top: 1px solid rgba(29, 78, 216, 0.12);
+    border-bottom: 1px solid rgba(29, 78, 216, 0.06);
   }
   .section-andean {
     background:
-      linear-gradient(180deg, rgba(58, 110, 58, 0.03) 0%, transparent 100%);
+      linear-gradient(180deg,
+        rgba(58, 110, 58, 0.07) 0%,
+        rgba(58, 110, 58, 0.02) 100%);
+    border-top: 1px solid rgba(58, 110, 58, 0.12);
   }
   .section-warm {
     background:
-      linear-gradient(180deg, transparent 0%, rgba(146, 64, 14, 0.03) 100%);
+      linear-gradient(180deg,
+        transparent 0%,
+        rgba(146, 64, 14, 0.05) 50%,
+        rgba(146, 64, 14, 0.08) 100%);
+    border-bottom: 1px solid rgba(146, 64, 14, 0.12);
   }
 }
 

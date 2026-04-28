@@ -27,24 +27,54 @@ jobs:
       - run: npm run build
         env:
           NODE_ENV: production
-      - name: Create root redirect /es/ + 404 fallback
+      - name: Create root redirect /es/ + 404 fallback (with OG metadata for social sharing)
         run: |
           cat > out/index.html <<'HTML'
           <!DOCTYPE html>
           <html lang="es">
           <head>
             <meta charset="utf-8">
-            <title>Geoportal Hidroclimático de Imbabura</title>
-            <meta http-equiv="refresh" content="0; url=./es/">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Geoportal Hidroclimático de Imbabura · 1981–2070</title>
+            <meta name="description" content="Geoportal científico de tendencias hidroclimáticas, teleconexión El Niño y proyecciones CMIP6 para la provincia de Imbabura, Ecuador. 21 estaciones INAMHI · 1981–2070 · Validación científica 90/100.">
+
+            <!-- Open Graph -->
+            <meta property="og:type" content="website">
+            <meta property="og:title" content="Geoportal Hidroclimático de Imbabura">
+            <meta property="og:description" content="Tendencias 1981–2025 · ENSO · Proyecciones CMIP6. 21 estaciones INAMHI · Score de validación 90/100.">
+            <meta property="og:url" content="https://victorsig1985.github.io/imbabura-hydroclimate/">
+            <meta property="og:image" content="https://victorsig1985.github.io/imbabura-hydroclimate/og-image.jpg">
+            <meta property="og:image:width" content="1200">
+            <meta property="og:image:height" content="630">
+            <meta property="og:image:alt" content="Geoportal Hidroclimático de Imbabura · Volcán Imbabura y Lago San Pablo">
+            <meta property="og:locale" content="es_EC">
+            <meta property="og:locale:alternate" content="en_US">
+            <meta property="og:site_name" content="Geoportal Hidroclimático de Imbabura">
+
+            <!-- Twitter -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Geoportal Hidroclimático de Imbabura">
+            <meta name="twitter:description" content="Tendencias 1981–2025 · ENSO · Proyecciones CMIP6 · Score 90/100.">
+            <meta name="twitter:image" content="https://victorsig1985.github.io/imbabura-hydroclimate/og-image.jpg">
+
             <link rel="canonical" href="./es/">
+            <meta http-equiv="refresh" content="0; url=./es/">
             <script>location.replace('./es/');</script>
+            <style>
+              body { margin:0; font-family:system-ui,sans-serif; background:#0a2540; color:#fff; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem; }
+              .box { text-align:center; max-width:600px; }
+              .box img { max-width:100%; border-radius:12px; margin-bottom:1.5rem; }
+              .box a { color:#60a5fa; }
+            </style>
           </head>
           <body>
-            <p>Redirigiendo a <a href="./es/">/es/</a> · Redirecting to <a href="./en/">/en/</a></p>
+            <div class="box">
+              <img src="og-image.jpg" alt="Geoportal Hidroclimático de Imbabura">
+              <p>Redirigiendo a <a href="./es/">español</a> · Redirecting to <a href="./en/">English</a>…</p>
+            </div>
           </body>
           </html>
           HTML
-          # Copy 404 to handle locale-less paths
           cp out/index.html out/404.html
       - uses: actions/upload-pages-artifact@v3
         with:

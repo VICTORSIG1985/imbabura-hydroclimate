@@ -28,7 +28,7 @@ export default async function ResultsPage({ params }: { params: Promise<{ locale
     <>
       <PageHero kicker="§4" title={t('title')} subtitle={t('subtitle')} variant="compact" />
 
-      <section className="section">
+      <section className="section section-andean">
         {/* 4.1 + Small Multiples MK */}
         <article className="mb-12">
           <h2 className="heading-3 mb-3 text-andean-deep">{t('s41_title')}</h2>

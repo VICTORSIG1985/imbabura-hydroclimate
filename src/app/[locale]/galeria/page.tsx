@@ -11,7 +11,7 @@ export default async function GalleryPage({ params }: { params: Promise<{ locale
   return (
     <>
       <PageHero kicker="22 figuras" title={t('title')} subtitle={t('subtitle')} variant="compact" />
-      <section className="section">
+      <section className="section section-warm">
         <GalleryLightbox />
       </section>
     </>

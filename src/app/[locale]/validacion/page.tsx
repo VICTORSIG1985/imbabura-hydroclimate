@@ -17,7 +17,7 @@ export default async function ValidationPage({ params }: { params: Promise<{ loc
   return (
     <>
       <PageHero kicker="Score 90/100" title={t('title')} subtitle={t('subtitle')} variant="compact" />
-      <section className="section">
+      <section className="section section-tinted">
         <ValidationCertificate />
 
         <div className="mt-12">

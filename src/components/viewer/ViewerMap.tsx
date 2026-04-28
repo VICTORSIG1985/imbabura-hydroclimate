@@ -15,7 +15,12 @@ const BASE_STYLE = 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json
 export default function ViewerMap({ mode, onSelectStation, selectedId }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MlMap | null>(null);
+  const onSelectRef = useRef(onSelectStation);
   const [loaded, setLoaded] = useState(false);
+
+  // Mantener el callback siempre actualizado para evitar que los listeners
+  // del mapa queden capturando una versión vieja (causa del bug "hay que dar 2 clics")
+  useEffect(() => { onSelectRef.current = onSelectStation; }, [onSelectStation]);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
@@ -227,7 +232,8 @@ export default function ViewerMap({ mode, onSelectStation, selectedId }: Props) 
           map.on('click', l, e => {
             const f = e.features?.[0];
             if (!f) return;
-            onSelectStation?.((f.properties as any).id);
+            // Usa el ref siempre actualizado, no la prop capturada
+            onSelectRef.current?.((f.properties as any).id);
           });
           map.on('mouseenter', l, () => { map.getCanvas().style.cursor = 'pointer'; });
           map.on('mouseleave', l, () => { map.getCanvas().style.cursor = ''; });

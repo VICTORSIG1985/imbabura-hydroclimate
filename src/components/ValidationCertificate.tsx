@@ -17,19 +17,21 @@ interface Certificate {
   regional_comparison: { rows: Array<Record<string, any>> };
 }
 
+// Solo describimos cualitativamente nuestra ubicación en la escala 0-100;
+// no hacemos afirmaciones absolutas sobre lo que otros rangos significarían.
 const SCORE_MEANING = {
-  es: [
-    { range: '90–100', label: 'Excelente', desc: 'Cumple estándares internacionales más rigurosos.', color: '#16a34a' },
-    { range: '75–89',  label: 'Robusto',  desc: 'Defendible para Q1; mejoras opcionales.',          color: '#1d4ed8' },
-    { range: '60–74',  label: 'Aceptable',desc: 'Defendible con ajustes obligatorios.',             color: '#f59e0b' },
-    { range: '<60',    label: 'Insuficiente',desc: 'Requiere rehacer pasos críticos.',              color: '#dc2626' },
-  ],
-  en: [
-    { range: '90–100', label: 'Excellent',     desc: 'Meets the most rigorous international standards.', color: '#16a34a' },
-    { range: '75–89',  label: 'Robust',        desc: 'Defensible for Q1; optional improvements.',         color: '#1d4ed8' },
-    { range: '60–74',  label: 'Acceptable',    desc: 'Defensible with mandatory adjustments.',            color: '#f59e0b' },
-    { range: '<60',    label: 'Insufficient',  desc: 'Requires redoing critical steps.',                  color: '#dc2626' },
-  ],
+  es: {
+    range: '90 / 100',
+    label: 'Verificación amplia',
+    desc:
+      'La auditoría revisó 14 controles metodológicos y 7 estándares internacionales. La evidencia disponible muestra que los métodos estadísticos, las correcciones aplicadas, la trazabilidad numérica y la transparencia de las limitaciones se han documentado con un grado alto de detalle. El score resume el resultado de esa revisión.',
+  },
+  en: {
+    range: '90 / 100',
+    label: 'Broad verification',
+    desc:
+      'The audit reviewed 14 methodological controls and 7 international standards. Available evidence shows that the statistical methods, applied corrections, numerical traceability and transparency about limitations have been documented in high detail. The score summarises the result of that review.',
+  },
 };
 
 export default function ValidationCertificate() {
@@ -104,43 +106,53 @@ export default function ValidationCertificate() {
         </h3>
         <p className="text-sm text-slate-600 mb-4 max-w-3xl">
           {isEs
-            ? 'El score 0–100 sintetiza la robustez de la investigación frente a los criterios usados por revistas internacionales (IPCC, Wiley, RMetS) y permite comunicar al público técnico (GAD, MAATE, comunidad científica) en qué punto del rigor metodológico se encuentra el estudio.'
-            : 'The 0–100 score synthesises the research\'s robustness against criteria used by international journals (IPCC, Wiley, RMetS) and communicates to the technical public (GAD, MAATE, scientific community) where the methodological rigour stands.'}
+            ? 'El score 0–100 resume el resultado de una auditoría metodológica sobre cinco dimensiones específicas: calidad del dato, rigor estadístico, control de incertidumbre, reproducibilidad y transparencia.'
+            : 'The 0–100 score summarises the outcome of a methodological audit on five specific dimensions: data quality, statistical rigour, uncertainty control, reproducibility and transparency.'}
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {SCORE_MEANING[locale].map((b, i) => {
-            const here = cert.global_score >= +b.range.split('–')[0].replace('<', '0');
-            const inRange = (() => {
-              const score = cert.global_score;
-              if (b.range === '90–100') return score >= 90;
-              if (b.range === '75–89')  return score >= 75 && score <= 89;
-              if (b.range === '60–74')  return score >= 60 && score <= 74;
-              return score < 60;
-            })();
-            return (
-              <div key={i} className={`p-4 rounded-xl border-2 ${inRange ? 'shadow-lg' : 'opacity-50'}`} style={{ borderColor: b.color, background: inRange ? b.color + '12' : '#f9fafb' }}>
-                <div className="flex items-baseline gap-2 mb-1">
-                  <span className="font-mono font-bold text-lg" style={{ color: b.color }}>{b.range}</span>
-                  {inRange && <span className="text-[10px] uppercase font-bold text-white px-1.5 py-0.5 rounded" style={{ background: b.color }}>{isEs ? 'Aquí' : 'Here'}</span>}
-                </div>
-                <p className="font-bold text-andean-deep">{b.label}</p>
-                <p className="text-xs text-slate-700 mt-1">{b.desc}</p>
-              </div>
-            );
-          })}
+        <div className="card border-2 border-band-B3 bg-green-50/40 max-w-3xl">
+          <div className="flex items-baseline gap-3 mb-2">
+            <span className="font-mono font-extrabold text-3xl text-band-B3">{SCORE_MEANING[locale].range}</span>
+            <span className="text-xs uppercase font-bold text-white bg-band-B3 px-2 py-0.5 rounded">{isEs ? 'Resultado actual' : 'Current result'}</span>
+          </div>
+          <p className="font-bold text-andean-deep text-lg mb-1">{SCORE_MEANING[locale].label}</p>
+          <p className="text-sm text-slate-700">{SCORE_MEANING[locale].desc}</p>
+
+          {/* Bloque "para no técnicos" */}
+          <div className="mt-4 flex gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+            <Info className="w-4 h-4 text-andean-water shrink-0 mt-0.5" />
+            <p className="text-sm text-slate-800 leading-relaxed">
+              <strong className="text-andean-water">{isEs ? '¿Qué significa esto?' : 'What does this mean?'}</strong>{' '}
+              {isEs
+                ? 'En palabras simples: cada cifra del estudio fue revisada con una lista de control sobre su origen, su procedimiento estadístico y la honestidad con que se reportan las limitaciones. La auditoría detectó 14 controles cumplidos y 5 limitaciones declaradas explícitamente. Eso significa que el estudio puede consultarse con confianza, sabiendo claramente dónde están sus fronteras de validez.'
+                : 'In simple terms: every figure of the study was reviewed against a checklist covering its origin, statistical procedure, and the honesty with which limitations are reported. The audit found 14 controls met and 5 limitations explicitly declared. This means the study can be consulted with confidence while clearly knowing where its validity boundaries lie.'}
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* === Reproducibilidad (única tarjeta sobre el aporte) === */}
+      {/* === Reproducibilidad === */}
       <section>
-        <div className="card border-l-4 border-l-andean-water max-w-3xl">
-          <Sparkles className="w-6 h-6 text-andean-water mb-2" />
-          <h4 className="font-bold text-andean-deep mb-1">{isEs ? 'Reproducibilidad' : 'Reproducibility'}</h4>
-          <p className="text-sm text-slate-700">
-            {isEs
-              ? 'Cada cifra del estudio se acompaña de su semilla aleatoria documentada (seed = 42 para todos los procesos bootstrap), versiones exactas de las librerías Python utilizadas (pandas 2.0, numpy 1.24, scipy 1.10, pymannkendall 1.4.3), y hashes SHA-256 de los 20 anuarios INAMHI fuente. Esto permite que cualquier persona técnica reproduzca el flujo de procesamiento completo y obtenga exactamente los mismos resultados.'
-              : 'Each figure of the study is accompanied by its documented random seed (seed = 42 for all bootstrap processes), exact versions of the Python libraries used (pandas 2.0, numpy 1.24, scipy 1.10, pymannkendall 1.4.3), and SHA-256 hashes of the 20 source INAMHI yearbooks. This allows any technical person to reproduce the complete processing pipeline and obtain exactly the same results.'}
-          </p>
+        <div className="card border-l-4 border-l-andean-water">
+          <div className="flex items-start gap-3 mb-3">
+            <Sparkles className="w-6 h-6 text-andean-water shrink-0" />
+            <div>
+              <h4 className="font-bold text-andean-deep mb-1">{isEs ? 'Reproducibilidad documentada' : 'Documented reproducibility'}</h4>
+              <p className="text-sm text-slate-700">
+                {isEs
+                  ? 'Cada cifra del estudio se acompaña de su semilla aleatoria documentada (seed = 42 para todos los procesos bootstrap), versiones exactas de las librerías Python utilizadas (pandas 2.0, numpy 1.24, scipy 1.10, pymannkendall 1.4.3), y hashes SHA-256 de los 20 anuarios INAMHI fuente.'
+                  : 'Each figure of the study is accompanied by its documented random seed (seed = 42 for all bootstrap processes), exact versions of the Python libraries used (pandas 2.0, numpy 1.24, scipy 1.10, pymannkendall 1.4.3), and SHA-256 hashes of the 20 source INAMHI yearbooks.'}
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+            <Info className="w-4 h-4 text-andean-water shrink-0 mt-0.5" />
+            <p className="text-sm text-slate-800 leading-relaxed">
+              <strong className="text-andean-water">{isEs ? '¿Qué significa esto?' : 'What does this mean?'}</strong>{' '}
+              {isEs
+                ? 'Si cualquier persona técnica quisiera repetir los mismos cálculos del estudio, tendría todos los ingredientes necesarios: los datos originales con su huella digital intacta, las versiones exactas del software usado y las "semillas" matemáticas que controlan los procesos aleatorios. Eso garantiza que se puedan obtener exactamente los mismos resultados — no hay "magia" en las cifras del geoportal.'
+                : 'If any technical person wanted to repeat the same calculations of the study, they would have all the necessary ingredients: original data with intact digital fingerprints, exact software versions, and the mathematical "seeds" controlling random processes. This guarantees the same exact results can be obtained — no "magic" hides behind the geoportal\'s figures.'}
+            </p>
+          </div>
         </div>
       </section>
 
@@ -153,6 +165,16 @@ export default function ValidationCertificate() {
               ? 'Cada dimensión se evalúa de forma independiente. Una alta puntuación en transparencia compensa una limitación de cobertura observacional, por ejemplo.'
               : 'Each dimension is evaluated independently. A high transparency score compensates, for instance, a limited observational coverage.'}
           </p>
+
+          <div className="flex gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg mb-3">
+            <Info className="w-4 h-4 text-andean-water shrink-0 mt-0.5" />
+            <p className="text-sm text-slate-800 leading-relaxed">
+              <strong className="text-andean-water">{isEs ? '¿Qué significa esto?' : 'What does this mean?'}</strong>{' '}
+              {isEs
+                ? 'Una sola nota global no captura todos los matices del rigor científico. Por eso el score se descompone en cinco aspectos: si los datos eran de buena calidad, si los métodos estadísticos fueron los correctos, si se manejaron las incertidumbres, si todo es reproducible y si se reportaron las limitaciones de forma honesta.'
+                : 'A single global score cannot capture all the nuances of scientific rigour. That is why the score is broken down into five aspects: whether the data was of good quality, whether the statistical methods were correct, whether uncertainties were handled, whether everything is reproducible, and whether limitations were reported honestly.'}
+            </p>
+          </div>
           <div className="space-y-2">
             {cert.score_breakdown.map((d, i) => (
               <div key={i} className="flex items-center gap-3 p-2.5 bg-slate-50 rounded-lg border border-slate-200">
@@ -195,6 +217,17 @@ export default function ValidationCertificate() {
           {t('checks_title')}
         </h3>
         <p className="text-sm text-slate-600 mb-4">{t('checks_subtitle')}</p>
+
+        <div className="flex gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg mb-4">
+          <Info className="w-4 h-4 text-andean-water shrink-0 mt-0.5" />
+          <p className="text-sm text-slate-800 leading-relaxed">
+            <strong className="text-andean-water">{isEs ? '¿Qué significa esto?' : 'What does this mean?'}</strong>{' '}
+            {isEs
+              ? 'Estas 14 verificaciones son una "lista de chequeo" que evalúa si el estudio aplicó procedimientos estadísticos correctos, controló posibles sesgos, y reportó incertidumbres. Cada item marcado significa que el estudio cumplió ese requisito metodológico específico.'
+              : 'These 14 verifications form a "checklist" assessing whether the study applied correct statistical procedures, controlled for potential biases, and reported uncertainties. Each ticked item means the study met that specific methodological requirement.'}
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-2">
           {cert.checks_passed.map(c => (
             <div key={c.id} className="flex items-start gap-3 bg-green-50 border border-green-100 rounded-lg p-3">
@@ -223,11 +256,15 @@ export default function ValidationCertificate() {
           config={{ displayModeBar: false, responsive: true }}
           style={{ width: '100%' }}
         />
-        <p className="text-xs text-slate-500 italic">
-          {isEs
-            ? 'La auditoría no busca esconder limitaciones, sino enmarcarlas. 14 controles exitosos + 5 limitaciones explícitas = transparencia metodológica.'
-            : 'The audit does not seek to hide limitations, but to frame them. 14 successful controls + 5 explicit limitations = methodological transparency.'}
-        </p>
+        <div className="flex gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg mt-2">
+          <Info className="w-4 h-4 text-andean-water shrink-0 mt-0.5" />
+          <p className="text-sm text-slate-800 leading-relaxed">
+            <strong className="text-andean-water">{isEs ? '¿Qué significa esto?' : 'What does this mean?'}</strong>{' '}
+            {isEs
+              ? 'La auditoría no busca solo decir "todo está bien". Su valor está en mostrar al mismo tiempo qué fue verificado correctamente (14 controles) y dónde el propio estudio reconoce que tiene límites (5 limitaciones). Esa proporción es lo que hace que un estudio sea creíble.'
+              : 'The audit does not simply seek to say "everything is fine". Its value lies in simultaneously showing what was correctly verified (14 controls) and where the study itself acknowledges its limits (5 limitations). That proportion is what makes a study credible.'}
+          </p>
+        </div>
       </section>
 
       {/* === 5 limitations === */}
@@ -237,6 +274,17 @@ export default function ValidationCertificate() {
           {t('limitations_title')}
         </h3>
         <p className="text-sm text-slate-600 mb-4">{t('limitations_subtitle')}</p>
+
+        <div className="flex gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg mb-4">
+          <Info className="w-4 h-4 text-andean-water shrink-0 mt-0.5" />
+          <p className="text-sm text-slate-800 leading-relaxed">
+            <strong className="text-andean-water">{isEs ? '¿Qué significa esto?' : 'What does this mean?'}</strong>{' '}
+            {isEs
+              ? 'Reconocer las limitaciones de un estudio es señal de honestidad científica, no de debilidad. Aquí se enumeran las cinco "fronteras de validez" que el propio autor declara: situaciones donde los resultados deben interpretarse con precaución porque los datos o métodos tienen alcance limitado.'
+              : 'Recognising a study\'s limitations is a sign of scientific honesty, not weakness. Here are listed the five "validity boundaries" the author declares: situations where results should be interpreted with caution because data or methods have limited scope.'}
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-2">
           {cert.limitations_declared.map(l => (
             <div key={l.id} className="flex items-start gap-3 bg-amber-50 border border-amber-200 rounded-lg p-3">
@@ -251,6 +299,17 @@ export default function ValidationCertificate() {
       <section>
         <h3 className="heading-3 text-andean-deep mb-1">{t('standards_title')}</h3>
         <p className="text-sm text-slate-600 mb-4">{t('standards_subtitle')}</p>
+
+        <div className="flex gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg mb-4">
+          <Info className="w-4 h-4 text-andean-water shrink-0 mt-0.5" />
+          <p className="text-sm text-slate-800 leading-relaxed">
+            <strong className="text-andean-water">{isEs ? '¿Qué significa esto?' : 'What does this mean?'}</strong>{' '}
+            {isEs
+              ? 'Los estándares internacionales son protocolos que la comunidad científica mundial acordó como buenas prácticas en climatología (IPCC, OMM y otras organizaciones). Cada vez que el estudio aplica uno de estos protocolos, su procedimiento queda alineado con prácticas internacionalmente reconocidas y verificables.'
+              : 'International standards are protocols that the global scientific community has agreed upon as best practices in climatology (IPCC, WMO and other organisations). Each time the study applies one of these protocols, its procedure aligns with internationally recognised and verifiable practices.'}
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-2">
           {cert.international_standards.map((s, i) => (
             <div key={i} className="flex items-start gap-3 bg-white border border-slate-200 rounded-lg p-3">

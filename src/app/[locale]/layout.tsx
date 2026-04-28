@@ -17,15 +17,44 @@ export async function generateMetadata({
 }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const { locale } = await params;
   const isEs = locale === 'es';
+  const title = isEs ? SITE.title_es : SITE.title_en;
+  const description = isEs
+    ? 'Geoportal científico de tendencias hidroclimáticas, teleconexión El Niño y proyecciones CMIP6 para la provincia de Imbabura, Ecuador. 21 estaciones INAMHI · 1981–2070 · Validación científica 90/100.'
+    : 'Scientific geoportal of hydroclimatic trends, El Niño teleconnection and CMIP6 projections for Imbabura Province, Ecuador. 21 INAMHI stations · 1981–2070 · Scientific validation 90/100.';
+  const ogImage = `${SITE.publicUrl}og-image.jpg`;
+
   return {
-    title: isEs ? SITE.title_es : SITE.title_en,
-    description: isEs ? SITE.tagline_es : SITE.tagline_en,
+    title,
+    description,
     metadataBase: new URL(SITE.publicUrl),
+    alternates: {
+      canonical: SITE.publicUrl + (isEs ? 'es/' : 'en/'),
+      languages: {
+        'es-EC': SITE.publicUrl + 'es/',
+        'en-US': SITE.publicUrl + 'en/',
+      },
+    },
     openGraph: {
-      title: isEs ? SITE.title_es : SITE.title_en,
-      description: isEs ? SITE.tagline_es : SITE.tagline_en,
+      title,
+      description,
       type: 'website',
       locale: isEs ? 'es_EC' : 'en_US',
+      siteName: title,
+      url: SITE.publicUrl + (isEs ? 'es/' : 'en/'),
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: 'Geoportal Hidroclimático de Imbabura · Volcán Imbabura y Lago San Pablo',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage],
     },
   };
 }
