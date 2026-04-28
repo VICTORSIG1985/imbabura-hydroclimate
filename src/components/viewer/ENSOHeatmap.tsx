@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { useLocale } from 'next-intl';
 import { dataUrl } from '@/lib/assets';
 
 interface ENSORecord {
@@ -20,16 +21,26 @@ const VAR_LABELS_ES: Record<string, string> = {
   'ETP_TERRA_mm': 'ETP',
   'PDSI_TERRA': 'PDSI',
 };
+const VAR_LABELS_EN: Record<string, string> = {
+  'PRECIP_CHIRPS_mm': 'Precipitation',
+  'TMED_ERA5_C': 'Mean T',
+  'TMAX_ERA5_C': 'Max T',
+  'TMIN_ERA5_C': 'Min T',
+  'HR_ERA5_pct': 'Relative humid.',
+  'ETP_TERRA_mm': 'PET',
+  'PDSI_TERRA': 'PDSI',
+};
 
 export default function ENSOHeatmap() {
+  const locale = useLocale() as 'es' | 'en';
   const [data, setData] = useState<ENSORecord[]>([]);
   useEffect(() => {
-    fetch(dataUrl('enso_per_station.json'))
-      .then(r => r.json())
-      .then(setData);
+    fetch(dataUrl('enso_per_station.json')).then(r => r.json()).then(setData);
   }, []);
 
   if (!data.length) return <div className="text-xs text-slate-500 p-3">Cargando heatmap…</div>;
+
+  const labels = locale === 'es' ? VAR_LABELS_ES : VAR_LABELS_EN;
 
   // Compute median rho per variable × lag
   const byVarLag: Record<string, Record<number, number[]>> = {};
@@ -61,41 +72,60 @@ export default function ENSOHeatmap() {
   };
 
   return (
-    <div className="bg-white border border-slate-200 rounded-xl p-3">
-      <p className="text-xs font-bold uppercase tracking-wide text-andean-deep mb-2">ENSO heatmap · ρ mediano</p>
-      <table className="w-full text-[10px]">
-        <thead>
-          <tr>
-            <th className="text-left font-semibold text-slate-500 pr-2">Variable</th>
-            {[0, 1, 2, 3].map(l => (
-              <th key={l} className="text-center font-semibold text-slate-500 pb-1">Lag-{l}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {VAR_ORDER.map(v => (
-            <tr key={v}>
-              <td className="py-1 pr-2 text-slate-700">{VAR_LABELS_ES[v] ?? v}</td>
-              {[0, 1, 2, 3].map(l => {
-                const rhos = byVarLag[v]?.[l] ?? [];
-                if (!rhos.length) return <td key={l} />;
-                const m = median(rhos);
-                return (
-                  <td
-                    key={l}
-                    className="py-1 px-1 text-center font-mono text-[9px]"
-                    style={{ background: colorFor(m), color: Math.abs(m) > 0.25 ? '#fff' : '#0f172a' }}
-                    title={`${rhos.length} estaciones · mediana ${m.toFixed(3)}`}
-                  >
-                    {m >= 0 ? '+' : ''}{m.toFixed(2)}
-                  </td>
-                );
-              })}
+    <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <p className="text-sm font-bold text-andean-deep mb-1">
+        {locale === 'es' ? 'Heatmap ENSO · ρ mediano' : 'ENSO heatmap · median ρ'}
+      </p>
+      <p className="text-xs text-slate-500 mb-3">
+        {locale === 'es'
+          ? 'Cada celda = correlación mediana de las 21 estaciones entre la variable y el índice ONI con un retraso (lag) específico.'
+          : 'Each cell = median correlation of 21 stations between the variable and the ONI index at a specific lag.'}
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs border-separate" style={{ borderSpacing: 2 }}>
+          <thead>
+            <tr>
+              <th className="text-left font-semibold text-slate-600 pr-3 pb-1.5 text-[11px]">
+                {locale === 'es' ? 'Variable' : 'Variable'}
+              </th>
+              {[0, 1, 2, 3].map(l => (
+                <th key={l} className="text-center font-semibold text-slate-600 pb-1.5 text-[11px]">
+                  Lag-{l}
+                </th>
+              ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <p className="text-[10px] text-slate-500 mt-2 italic">ρ Spearman mediano de 21 estaciones · azul = negativo · rojo = positivo</p>
+          </thead>
+          <tbody>
+            {VAR_ORDER.map(v => (
+              <tr key={v}>
+                <td className="py-1.5 pr-3 text-slate-700 text-[12px] font-medium">
+                  {labels[v] ?? v}
+                </td>
+                {[0, 1, 2, 3].map(l => {
+                  const rhos = byVarLag[v]?.[l] ?? [];
+                  if (!rhos.length) return <td key={l} />;
+                  const m = median(rhos);
+                  return (
+                    <td
+                      key={l}
+                      className="py-2 px-2 text-center font-mono text-[11px] font-bold rounded"
+                      style={{ background: colorFor(m), color: Math.abs(m) > 0.25 ? '#fff' : '#0f172a' }}
+                      title={`${rhos.length} estaciones · mediana ${m.toFixed(3)}`}
+                    >
+                      {m >= 0 ? '+' : ''}{m.toFixed(2)}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-[10px] text-slate-500 mt-2 italic">
+        {locale === 'es'
+          ? 'Azul = El Niño hace que la variable disminuya · Rojo = la aumenta'
+          : 'Blue = El Niño reduces the variable · Red = increases it'}
+      </p>
     </div>
   );
 }

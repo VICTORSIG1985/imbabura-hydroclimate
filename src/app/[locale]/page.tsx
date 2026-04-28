@@ -57,7 +57,7 @@ function HomeContent({ locale }: { locale: Locale }) {
       </section>
 
       {/* KPIs */}
-      <section id="kpis" className="section">
+      <section id="kpis" className="section section-tinted">
         <h2 className="heading-2 mb-1 text-andean-deep">{t('kpis_title')}</h2>
         <p className="text-sm text-slate-600 mb-6">
           {isEs ? '21 estaciones INAMHI · 1981–2070 · auditoría científica con score 90/100' : '21 INAMHI stations · 1981–2070 · scientific audit score 90/100'}
@@ -73,7 +73,7 @@ function HomeContent({ locale }: { locale: Locale }) {
       </section>
 
       {/* What you'll find */}
-      <section className="section pt-0">
+      <section className="section pt-0 section-andean">
         <h2 className="heading-2 mb-6 text-andean-deep">{t('what_title')}</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[

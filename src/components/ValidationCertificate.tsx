@@ -32,13 +32,6 @@ const SCORE_MEANING = {
   ],
 };
 
-const TickIcon = (v: any) => {
-  if (v === true)         return <span className="text-green-600 font-bold">✓</span>;
-  if (v === 'partial')    return <span className="text-amber-500 font-bold">~</span>;
-  if (v === false)        return <span className="text-slate-300">·</span>;
-  return <span className="text-slate-400">{String(v)}</span>;
-};
-
 export default function ValidationCertificate() {
   const t = useTranslations('validation');
   const locale = useLocale() as 'es' | 'en';
@@ -138,22 +131,16 @@ export default function ValidationCertificate() {
         </div>
       </section>
 
-      {/* === ¿Cómo contribuye? === */}
-      <section className="grid md:grid-cols-3 gap-4">
-        <div className="card border-l-4 border-l-andean-water">
+      {/* === Reproducibilidad (única tarjeta sobre el aporte) === */}
+      <section>
+        <div className="card border-l-4 border-l-andean-water max-w-3xl">
           <Sparkles className="w-6 h-6 text-andean-water mb-2" />
-          <h4 className="font-bold text-andean-deep mb-1">{isEs ? 'Defensa académica' : 'Academic defence'}</h4>
-          <p className="text-sm text-slate-600">{isEs ? 'Score 90/100 indica que la investigación supera el umbral mínimo para revistas Q1 internacionales y puede defenderse en revisiones por pares exigentes.' : 'A 90/100 score indicates the research clears the minimum threshold for Q1 international journals and can be defended in rigorous peer review.'}</p>
-        </div>
-        <div className="card border-l-4 border-l-band-B3">
-          <Sparkles className="w-6 h-6 text-band-B3 mb-2" />
-          <h4 className="font-bold text-andean-deep mb-1">{isEs ? 'Confianza institucional' : 'Institutional trust'}</h4>
-          <p className="text-sm text-slate-600">{isEs ? 'Permite a GAD y MAATE Ecuador integrar las proyecciones a sus instrumentos de planificación territorial con confianza basada en evidencia auditada.' : 'Allows GAD and MAATE Ecuador to integrate projections into territorial planning instruments with confidence grounded in audited evidence.'}</p>
-        </div>
-        <div className="card border-l-4 border-l-band-B2">
-          <Sparkles className="w-6 h-6 text-band-B2 mb-2" />
           <h4 className="font-bold text-andean-deep mb-1">{isEs ? 'Reproducibilidad' : 'Reproducibility'}</h4>
-          <p className="text-sm text-slate-600">{isEs ? 'La trazabilidad end-to-end y los hashes SHA-256 garantizan que cualquier investigador pueda verificar cada cifra, alineando el estudio con principios FAIR y TOP.' : 'End-to-end traceability and SHA-256 hashes guarantee any researcher can verify each figure, aligning the study with FAIR and TOP principles.'}</p>
+          <p className="text-sm text-slate-700">
+            {isEs
+              ? 'Cada cifra del estudio se acompaña de su semilla aleatoria documentada (seed = 42 para todos los procesos bootstrap), versiones exactas de las librerías Python utilizadas (pandas 2.0, numpy 1.24, scipy 1.10, pymannkendall 1.4.3), y hashes SHA-256 de los 20 anuarios INAMHI fuente. Esto permite que cualquier persona técnica reproduzca el flujo de procesamiento completo y obtenga exactamente los mismos resultados.'
+              : 'Each figure of the study is accompanied by its documented random seed (seed = 42 for all bootstrap processes), exact versions of the Python libraries used (pandas 2.0, numpy 1.24, scipy 1.10, pymannkendall 1.4.3), and SHA-256 hashes of the 20 source INAMHI yearbooks. This allows any technical person to reproduce the complete processing pipeline and obtain exactly the same results.'}
+          </p>
         </div>
       </section>
 
@@ -278,46 +265,6 @@ export default function ValidationCertificate() {
         </div>
       </section>
 
-      {/* === Comparativo regional === */}
-      <section>
-        <h3 className="heading-3 text-andean-deep mb-1">{t('comparison_title')}</h3>
-        <p className="text-sm text-slate-600 mb-4">{t('comparison_subtitle')}</p>
-        <div className="overflow-x-auto bg-white border border-slate-200 rounded-xl">
-          <table className="w-full text-sm">
-            <thead className="bg-andean-snow border-b border-slate-200">
-              <tr>
-                <th className="text-left p-3 font-bold text-andean-deep">{isEs ? 'Estudio' : 'Study'}</th>
-                <th className="text-center p-3 font-bold text-andean-deep">MMK</th>
-                <th className="text-center p-3 font-bold text-andean-deep">FDR</th>
-                <th className="text-center p-3 font-bold text-andean-deep">Bootstrap</th>
-                <th className="text-center p-3 font-bold text-andean-deep">{isEs ? 'Trazabilidad' : 'Traceability'}</th>
-                <th className="text-center p-3 font-bold text-andean-deep">{isEs ? 'Bilingüe' : 'Bilingual'}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cert.regional_comparison.rows.map((r, i) => {
-                const isOurs = r.study.toLowerCase().includes('pinto-páez');
-                return (
-                  <tr key={i} className={isOurs ? 'bg-green-50 border-y-2 border-green-200' : 'border-b border-slate-100'}>
-                    <td className={`p-3 ${isOurs ? 'font-bold text-andean-deep' : 'text-slate-700'}`}>
-                      {r.study}
-                      {isOurs && <span className="ml-2 text-[10px] uppercase bg-green-600 text-white px-1.5 py-0.5 rounded">{isEs ? 'Esta investigación' : 'This research'}</span>}
-                    </td>
-                    <td className="p-3 text-center text-lg">{TickIcon(r.mmk)}</td>
-                    <td className="p-3 text-center text-lg">{TickIcon(r.fdr)}</td>
-                    <td className="p-3 text-center text-lg">{TickIcon(r.bootstrap)}</td>
-                    <td className="p-3 text-center text-lg">{TickIcon(r.traceability)}</td>
-                    <td className="p-3 text-center text-lg">{TickIcon(r.bilingual)}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        <p className="text-xs text-slate-500 italic mt-2">
-          ✓ {isEs ? 'Cumple' : 'Compliant'} · ~ {isEs ? 'Parcial' : 'Partial'} · · {isEs ? 'No reportado' : 'Not reported'}
-        </p>
-      </section>
     </div>
   );
 }

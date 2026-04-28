@@ -11,10 +11,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const t = await getTranslations('about');
   const isEs = locale === 'es';
 
-  // Cita APA 7ª edición (verificada): Apellido, Inicial. (Año). Título en cursiva. Editorial. URL/DOI
-  // Para datasets/portales: nombre, año, título, plataforma, URL
-  const apa7_es = `Pinto-Páez, V. H. (2026). Geoportal Hidroclimático de Imbabura: Tendencias 1981–2025, ENSO y proyecciones CMIP6 [Geoportal científico bilingüe]. ${SITE.publicUrl}`;
-  const apa7_en = `Pinto-Páez, V. H. (2026). Imbabura Hydroclimatic Geoportal: Trends 1981–2025, ENSO and CMIP6 projections [Bilingual scientific geoportal]. ${SITE.publicUrl}`;
+  // Cita APA 7ª edición — sin la palabra "bilingüe"
+  const apa7_es = `Pinto-Páez, V. H. (2026). Geoportal Hidroclimático de Imbabura: Tendencias 1981–2025, ENSO y proyecciones CMIP6 [Geoportal científico]. ${SITE.publicUrl}`;
+  const apa7_en = `Pinto-Páez, V. H. (2026). Imbabura Hydroclimatic Geoportal: Trends 1981–2025, ENSO and CMIP6 projections [Scientific geoportal]. ${SITE.publicUrl}`;
 
   return (
     <>
@@ -95,17 +94,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
 
           <aside className="space-y-4">
-            <div className="card-dark">
-              <h3 className="font-bold mb-2">{isEs ? 'Imagen de portada' : 'Hero image'}</h3>
-              <p className="text-xs text-andean-snow/80 leading-relaxed">
-                {isEs
-                  ? 'Volcán Imbabura y Lago San Pablo · Fotografía de David C. S. (2015) · Wikimedia Commons · Licencia CC BY-SA 4.0'
-                  : 'Imbabura Volcano and San Pablo Lake · Photograph by David C. S. (2015) · Wikimedia Commons · CC BY-SA 4.0 licence'}
-              </p>
-              <a href="https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Imbabura_y_lago_San_Pablo.jpg" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs mt-3 underline text-andean-snow">
-                <ExternalLink className="w-3.5 h-3.5"/> {isEs ? 'Ver fuente' : 'View source'}
-              </a>
-            </div>
             <div className="card">
               <h3 className="font-bold text-andean-deep mb-2">{isEs ? 'Licencia' : 'Licence'}</h3>
               <p className="text-xs text-slate-600">
@@ -115,6 +103,19 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </p>
               <a href={SITE.licenseUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs mt-2 link-cta">
                 <ExternalLink className="w-3 h-3"/> {SITE.license}
+              </a>
+            </div>
+            <div className="card-dark">
+              <h3 className="font-bold mb-2">
+                {isEs ? 'Validación científica' : 'Scientific validation'}
+              </h3>
+              <p className="text-xs text-andean-snow/80 leading-relaxed">
+                {isEs
+                  ? 'Score 90/100 · auditoría metodológica con estándares IPCC AR6, WMO N° 1203 y Pepin et al. (2022).'
+                  : 'Score 90/100 · methodological audit against IPCC AR6, WMO No. 1203 and Pepin et al. (2022) standards.'}
+              </p>
+              <a href={`/${locale}/validacion`} className="inline-flex items-center gap-1 text-xs mt-3 underline text-andean-snow">
+                {isEs ? 'Ver auditoría' : 'View audit'} →
               </a>
             </div>
           </aside>

@@ -78,6 +78,7 @@
         "long": "Diagnóstico climático observado",
         "question": "¿Qué clima tiene Imbabura?",
         "intro": "Este modo muestra la red observacional, la climatología 1991–2020 y las bandas altitudinales que estructuran la heterogeneidad climática provincial.",
+        "plain": "En palabras simples: aquí ves dónde están las estaciones climáticas y cómo el relieve de la provincia (entre 675 y 4 939 m de altura) crea climas muy diferentes en distancias cortas. Las estaciones están coloreadas por su altitud para que entiendas a primera vista a qué piso climático pertenece cada una.",
         "interp": "Imbabura presenta un fuerte gradiente altitudinal que condiciona la distribución espacial de la temperatura, la precipitación y la respuesta climática observada."
       },
       "B": {
@@ -85,6 +86,7 @@
         "long": "Tendencias hidroclimáticas 1981–2025",
         "question": "¿Dónde aumentan o disminuyen las variables climáticas?",
         "intro": "Pendientes Mann–Kendall + Theil–Sen para 7 variables, con sensibilidad MMK Hamed-Rao y corrección FDR-BH a q=0.05.",
+        "plain": "En palabras simples: cada círculo es una estación. El tamaño del círculo indica cuánto está cambiando la temperatura por año en ese punto. El color rojo significa que se está calentando. Mientras más grande el círculo, más rápido es el cambio observado durante los últimos 44 años.",
         "interp": "Calentamiento generalizado significativo en 14/16 píxeles ERA5 independientes y aumento de precipitación clúster en la vertiente occidental (M0086, M0103, M0104, M0314)."
       },
       "C": {
@@ -92,6 +94,7 @@
         "long": "Validación de productos climáticos",
         "question": "¿Qué tan confiables son CHIRPS y ERA5-Land?",
         "intro": "Validación cruzada contra 2 estaciones automáticas INAMHI (M0105 y M1240) con métricas Pearson r, RMSE, MAE y sesgo absoluto/relativo.",
+        "plain": "En palabras simples: para confiar en datos satelitales o de modelos atmosféricos, primero hay que compararlos con mediciones reales. Solo 2 de las 21 estaciones tienen registros horarios contemporáneos con los productos satelitales (M0105 Otavalo y M1240 Ibarra), por eso únicamente esas 2 aparecen en color. Las otras 19 (en gris) no participan en la validación cruzada porque sus registros son históricos (1994–2013), no del mismo período de los satélites.",
         "interp": "CHIRPS-M1240 adecuado para precipitación; ERA5-Land presenta sesgo cálido sistemático +8.7 °C sobre el valle inter-andino, válido para tendencias temporales pero no para magnitud absoluta puntual."
       },
       "D": {
@@ -99,6 +102,7 @@
         "label": "ENSO",
         "question": "¿Qué variables responden más a El Niño?",
         "intro": "Correlación Spearman entre ONI mensual y series climáticas locales con rezagos 0–3 meses; corrección FDR-BH sobre 588 tests.",
+        "plain": "En palabras simples: cuando el océano Pacífico se calienta (fenómeno El Niño), la lluvia y la temperatura en Imbabura responden con un retraso de algunos meses. Aquí ves qué tan fuerte es esa conexión en cada estación. Color azul = cuando llega El Niño, esa variable disminuye. Color rojo = aumenta. La señal es bastante consistente: en las 21 estaciones, la precipitación tiende a bajar durante eventos El Niño.",
         "interp": "Correlación negativa significativa precip-ONI en las 21 estaciones (mediana ρ=−0.23, lag-3 dominante); 463 de 588 tests retenidos tras FDR-BH."
       },
       "E": {
@@ -106,6 +110,7 @@
         "label": "CMIP6",
         "question": "¿Qué podría pasar bajo diferentes escenarios?",
         "intro": "Ensemble BASD-CMIP6-PE de 10 GCMs bajo SSP1-2.6, SSP3-7.0 y SSP5-8.5 con cambio mediano e IQR inter-modelo por banda altitudinal.",
+        "plain": "En palabras simples: 10 modelos climáticos internacionales coinciden en que Imbabura se va a calentar entre +1.1 °C y +2.1 °C hacia el año 2070, dependiendo de cuánto reduzca el mundo sus emisiones (escenarios optimista, intermedio, pesimista). El detalle: las zonas altas se calentarán algo más rápido que las bajas. Aquí muestras esas proyecciones por banda altitudinal — pero recuerda: son señales regionales, no predicciones para una parroquia exacta.",
         "interp": "Calentamiento proyectado de +1.1 a +2.1 °C al 2041–2070 con 100 % acuerdo de signo y amplificación altitudinal (EDW) modesta de ~0.25 °C entre B3 y B1.",
         "warning": "Las proyecciones representan señales climáticas regionales y por banda altitudinal; no deben interpretarse como predicciones puntuales para una estación o parroquia específica (escala modelo ~100 km)."
       },
@@ -114,8 +119,13 @@
         "label": "Trazabilidad",
         "question": "¿De dónde sale cada cifra?",
         "intro": "Tabla S10 navegable: cada afirmación numérica del manuscrito se enlaza con su archivo crudo, archivo intermedio, script de producción y output final.",
-        "interp": "Reproducibilidad end-to-end con scripts Python y semillas documentadas; depósito Zenodo concept DOI 10.5281/zenodo.19821757."
+        "plain": "En palabras simples: cada número que aparece en este geoportal puede rastrearse hasta el archivo de datos que lo generó y el procedimiento que se aplicó. Eso permite que cualquier persona técnica verifique cada resultado de forma independiente. Esa trazabilidad es la base del rigor científico.",
+        "interp": "Cada cifra del estudio puede rastrearse hasta su archivo fuente verificable, garantizando reproducibilidad end-to-end."
       }
+    },
+    "carchi_note": {
+      "title": "¿Por qué hay 3 estaciones de Carchi en este estudio?",
+      "body": "Las estaciones M0086 (San Vicente de Pusir), M0103 (San Gabriel) y M0104 (Mira-FAO) pertenecen administrativamente a la provincia de Carchi, pero están ubicadas en el corredor del río Mira justo al norte del límite provincial de Imbabura. Se incluyen para cerrar la cobertura espacial del gradiente Chota-Mira en su sector septentrional, donde la red INAMHI tiene poca densidad. Esta decisión está documentada en la Tabla 1 del manuscrito y en la sección 3.1."
     },
     "panel": {
       "key_finding": "Hallazgo clave",
@@ -158,9 +168,11 @@
       "color_warning": "Codificación redundante: color + borde + flecha"
     },
     "validation_status": {
-      "ACCEPTABLE": "Adecuado",
-      "LIMITED": "Limitado",
+      "ACCEPTABLE": "Adecuado · M1240 Ibarra",
+      "LIMITED": "Limitado · M0105 Otavalo",
       "REJECTED_FOR_ABSOLUTE": "No recomendado para magnitud absoluta",
+      "NO_VALIDATION": "Sin validación cruzada disponible",
+      "explanation": "Solo 2 estaciones automáticas tienen registros horarios contemporáneos con los productos satelitales para validar.",
       "ACCEPTABLE_desc": "Apto para análisis cuantitativo (r ≥ 0.60 y |sesgo| ≤ 50 %).",
       "LIMITED_desc": "Apto con cautela; requiere reportar incertidumbre (0.40 ≤ r < 0.60 o sesgo elevado).",
       "REJECTED_FOR_ABSOLUTE_desc": "No usar para magnitud absoluta puntual; sí válido para tendencias temporales (sesgo sistemático cancela en Δt)."
@@ -254,7 +266,7 @@
     "title": "Acerca del proyecto",
     "subtitle": "Autor, cita académica, licencia y contacto.",
     "author_title": "Autor",
-    "author_role": "Investigador independiente · Especialista en geoinformática y climatología aplicada",
+    "author_role": "Gestor de Riesgos y Desastres · Especialista en Geoinformación, Teledetección y Sistemas de Información Geográfica",
     "cite_title": "Cómo citar",
     "cite_apa": "Pinto-Páez, V. H. (2026). Hydroclimatic trends, ENSO teleconnection, and CMIP6 projections in Imbabura Province, Ecuador: a traceable regional hydroclimatic baseline with projected elevation-dependent warming, 1981–2070. International Journal of Climatology [under review]. Zenodo. https://doi.org/10.5281/zenodo.19821757",
     "license_title": "Licencia",

@@ -8,8 +8,15 @@
   }
   html { scroll-behavior: smooth; }
   body {
-    @apply bg-white text-slate-800 antialiased;
+    @apply text-slate-800 antialiased;
     font-family: 'Inter', system-ui, sans-serif;
+    /* Fondo con sutil textura andina — gradiente diagonal muy tenue */
+    background-color: #fafbfc;
+    background-image:
+      radial-gradient(1200px 800px at 10% -10%, rgba(29, 78, 216, 0.04), transparent 60%),
+      radial-gradient(1000px 700px at 110% 50%, rgba(58, 110, 58, 0.04), transparent 60%),
+      radial-gradient(800px 600px at 50% 110%, rgba(146, 64, 14, 0.03), transparent 60%);
+    background-attachment: fixed;
   }
   h1, h2, h3, h4 {
     font-family: 'Source Serif 4', Georgia, serif;
@@ -20,16 +27,20 @@
 @layer components {
   .container-page { @apply max-w-7xl mx-auto px-4 sm:px-6; }
   .section { @apply container-page py-10 sm:py-14; }
+
+  /* Card con borde delicado y sombra sutil */
   .card {
-    @apply bg-white border border-slate-200 rounded-xl p-5 shadow-sm
+    @apply bg-white/90 backdrop-blur-sm border border-slate-200 rounded-xl p-5 shadow-sm
            hover:shadow-md transition-shadow;
   }
   .card-dark {
-    @apply bg-slate-900 text-slate-100 border border-slate-700 rounded-xl p-5;
+    @apply text-slate-100 border border-slate-700 rounded-xl p-5;
+    background: linear-gradient(135deg, #0a2540 0%, #1d4ed8 100%);
   }
+
   .btn-primary {
     @apply inline-flex items-center gap-2 bg-andean-deep hover:bg-andean-water
-           text-white font-semibold px-5 py-2.5 rounded-lg transition-colors;
+           text-white font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm hover:shadow;
   }
   .btn-outline {
     @apply inline-flex items-center gap-2 border-2 border-andean-deep
@@ -40,10 +51,13 @@
     @apply inline-flex items-center gap-2 text-slate-600 hover:text-andean-deep
            font-medium px-3 py-1.5 rounded-lg transition-colors;
   }
+
+  /* KPI con glassmorphism + gradiente sutil */
   .kpi-box {
-    @apply flex flex-col bg-gradient-to-br from-andean-snow to-white
-           border border-slate-200 rounded-xl p-5 hover:shadow-md transition-shadow;
+    @apply flex flex-col bg-gradient-to-br from-white to-andean-snow/50
+           backdrop-blur-sm border border-slate-200 rounded-xl p-5 hover:shadow-md transition-shadow;
   }
+
   .pill {
     @apply inline-flex items-center gap-1 bg-andean-snow text-andean-deep
            text-xs font-semibold px-2.5 py-1 rounded-full border border-slate-200;
@@ -51,6 +65,7 @@
   .pill-band-B1 { @apply pill border-band-B1 text-band-B1 bg-red-50; }
   .pill-band-B2 { @apply pill border-band-B2 text-band-B2 bg-amber-50; }
   .pill-band-B3 { @apply pill border-band-B3 text-band-B3 bg-green-50; }
+
   .link-cta {
     @apply text-andean-water hover:text-andean-deep underline-offset-2 hover:underline font-medium;
   }
@@ -59,6 +74,21 @@
   .heading-3 { @apply text-xl sm:text-2xl font-bold leading-snug; }
   .body-lg { @apply text-base sm:text-lg leading-relaxed text-slate-700; }
   .small { @apply text-xs sm:text-sm text-slate-500; }
+
+  /* Sección con bandas de fondo alternadas para romper el blanco uniforme */
+  .section-tinted {
+    @apply relative;
+    background:
+      linear-gradient(180deg, transparent 0%, rgba(29, 78, 216, 0.025) 50%, transparent 100%);
+  }
+  .section-andean {
+    background:
+      linear-gradient(180deg, rgba(58, 110, 58, 0.03) 0%, transparent 100%);
+  }
+  .section-warm {
+    background:
+      linear-gradient(180deg, transparent 0%, rgba(146, 64, 14, 0.03) 100%);
+  }
 }
 
 /* MapLibre overrides */
