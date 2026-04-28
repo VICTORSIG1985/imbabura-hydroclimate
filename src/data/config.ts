@@ -20,15 +20,15 @@ export const SITE = {
   email: 'vpintopaez@gmail.com',
   orcid: '0009-0001-5573-8294',
   githubUser: 'VICTORSIG1985',
-  githubRepo: 'imbabura-hidroclima',
-  publicUrl: 'https://victorsig1985.github.io/imbabura-hidroclima/',
+  githubRepo: 'imbabura-hydroclimate',
+  publicUrl: 'https://victorsig1985.github.io/imbabura-hydroclimate/',
   doi: '10.5281/zenodo.19821757',
   zenodoUrl: 'https://doi.org/10.5281/zenodo.19821757',
   journal: 'International Journal of Climatology',
   publisher: 'Wiley · Royal Meteorological Society',
   year: '2026',
   license: 'CC-BY-4.0',
-  basePath: '/imbabura-hidroclima',
+  basePath: '/imbabura-hydroclimate',
 } as const;
 
 export const STUDY_PERIODS = {
