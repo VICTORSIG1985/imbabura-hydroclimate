@@ -27,6 +27,25 @@ jobs:
       - run: npm run build
         env:
           NODE_ENV: production
+      - name: Create root redirect /es/ + 404 fallback
+        run: |
+          cat > out/index.html <<'HTML'
+          <!DOCTYPE html>
+          <html lang="es">
+          <head>
+            <meta charset="utf-8">
+            <title>Geoportal Hidroclimático de Imbabura</title>
+            <meta http-equiv="refresh" content="0; url=./es/">
+            <link rel="canonical" href="./es/">
+            <script>location.replace('./es/');</script>
+          </head>
+          <body>
+            <p>Redirigiendo a <a href="./es/">/es/</a> · Redirecting to <a href="./en/">/en/</a></p>
+          </body>
+          </html>
+          HTML
+          # Copy 404 to handle locale-less paths
+          cp out/index.html out/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
